@@ -1,0 +1,5 @@
+
+gsquid:CallToDeprecatedMethod"3Remove this use of "description"; it is deprecated.(¸•Úüÿÿÿÿ8˜ÕÑÊã-
+msquid:S4488+"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ãèïûÿÿÿÿ8ò¨«ã-
+~squid:UselessImportCheck"NRemove this unused import 'com.onnoa.springboot.security.jwt.domain.UmsAdmin'.(°Œüàøÿÿÿÿ8½Ü«ã-
+hsquid:S44889"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ÌãŸ8é×¼¬ã-

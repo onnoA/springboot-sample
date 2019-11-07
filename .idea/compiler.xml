@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="chapter01-springboot-mybatis-plus" />
+        <module name="chapter03-springboot-redission" />
+        <module name="chapter04-springboot-redis" />
+        <module name="chapter05-springboot-security-jwt" />
+        <module name="spring-boot-security-oauth2-resource" />
+        <module name="spring-boot-security-oauth2-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chapter01-springboot-mybatis-plus" target="1.8" />
+      <module name="chapter02-springboot-spring-security-oauth2" target="1.8" />
+      <module name="chapter03-springboot-redission" target="1.8" />
+      <module name="chapter04-springboot-redis" target="1.8" />
+      <module name="chapter05-springboot-security-jwt" target="1.8" />
+      <module name="spring-boot-security-oauth2-dependencies" target="1.5" />
+      <module name="spring-boot-security-oauth2-resource" target="1.8" />
+      <module name="spring-boot-security-oauth2-server" target="1.8" />
+      <module name="springboot-samples" target="1.8" />
+      <module name="springboot-samples-dependencies" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,4 @@
+
+|squid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "tbUser".(ØôÚ±8¤·£¦â-
+Tsquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+Zsquid:UselessImportCheck"6Remove this unused import 'javax.annotation.Resource'.(î¾Ì—
