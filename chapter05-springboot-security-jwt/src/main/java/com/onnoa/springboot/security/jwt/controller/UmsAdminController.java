@@ -1,15 +1,17 @@
 package com.onnoa.springboot.security.jwt.controller;
 
+import com.onnoa.springboot.security.jwt.common.BusinessException;
 import com.onnoa.springboot.security.jwt.common.CommonResult;
-import com.onnoa.springboot.security.jwt.domain.UmsAdmin;
 import com.onnoa.springboot.security.jwt.domain.UmsPermission;
 import com.onnoa.springboot.security.jwt.dto.UmsAdminDto;
 import com.onnoa.springboot.security.jwt.service.UmsAdminService;
+import com.onnoa.springboot.security.jwt.utils.ValidationUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.List;
 
@@ -41,7 +44,12 @@ public class UmsAdminController {
     @ApiOperation(value = "登录以后返回token")
     @ResponseBody
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public CommonResult login(@RequestBody UmsAdminDto umsAdminDto, HttpServletRequest request, BindingResult result) {
+    public CommonResult login(@RequestBody UmsAdminDto umsAdminDto, HttpServletRequest request) {
+        try {
+            ValidationUtil.validate(umsAdminDto);
+        } catch (BusinessException e) {
+            return CommonResult.validateFailed("参数校验失败");
+        }
         String token = umsAdminService.login(umsAdminDto.getUsername(), umsAdminDto.getPassword(), request);
         if (token == null) {
             return CommonResult.validateFailed("用户名或密码错误，请重新输入！");

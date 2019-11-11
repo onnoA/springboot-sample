@@ -12,6 +12,7 @@
         <module name="chapter05-springboot-security-jwt" />
         <module name="spring-boot-security-oauth2-resource" />
         <module name="spring-boot-security-oauth2-server" />
+        <module name="springboot-commons" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="spring-boot-security-oauth2-dependencies" target="1.5" />
       <module name="spring-boot-security-oauth2-resource" target="1.8" />
       <module name="spring-boot-security-oauth2-server" target="1.8" />
+      <module name="springboot-commons" target="1.8" />
       <module name="springboot-samples" target="1.8" />
       <module name="springboot-samples-dependencies" target="1.5" />
     </bytecodeTargetLevel>

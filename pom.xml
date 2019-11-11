@@ -30,6 +30,7 @@
         <module>chapter03-springboot-redission</module>
         <module>chapter04-springboot-redis</module>
         <module>springboot-samples-dependencies</module>
+        <module>springboot-commons</module>
     </modules>
 
     <dependencyManagement>
