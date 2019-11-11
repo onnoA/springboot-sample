@@ -2,41 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d255ccc1-c1fd-49c0-bd35-e89eb68ffc6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/java/com/onnoa/springboot/security/jwt/common/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/java/com/onnoa/springboot/security/jwt/utils/ValidationUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/resources/application-local.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-commons/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-commons/springboot-commons.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/BeanUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/FtpUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/PlaceholderHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/PropertiesUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/4448e88a7bdeedb9cefa3433905e44a10dbba8a0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/4448e88a7bdeedb9cefa3433905e44a10dbba8a0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58062a1c444241ad4e83c2eb39f7ca76f283a49d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58062a1c444241ad4e83c2eb39f7ca76f283a49d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/602aaf339c8d451bb367de2966cb819ff169449c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/602aaf339c8d451bb367de2966cb819ff169449c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/96cc1ffa319e4edbec0811f7ded9ada9dbda1956" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/96cc1ffa319e4edbec0811f7ded9ada9dbda1956" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be45481f5947aefc317d60b51fb85139279040ae" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be45481f5947aefc317d60b51fb85139279040ae" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e4142b7e991ab44807dc326ec0730299e584d424" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e4142b7e991ab44807dc326ec0730299e584d424" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter05-springboot-security-jwt/chapter05-springboot-security-jwt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter05-springboot-security-jwt/chapter05-springboot-security-jwt.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter05-springboot-security-jwt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter05-springboot-security-jwt/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/java/com/onnoa/springboot/security/jwt/SpringBootSecurityJWTApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/java/com/onnoa/springboot/security/jwt/SpringBootSecurityJWTApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/java/com/onnoa/springboot/security/jwt/controller/UmsAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/java/com/onnoa/springboot/security/jwt/controller/UmsAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/java/com/onnoa/springboot/security/jwt/dto/UmsAdminDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/java/com/onnoa/springboot/security/jwt/dto/UmsAdminDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter05-springboot-security-jwt/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter05-springboot-security-jwt/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-samples-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-samples-dependencies/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-commons/springboot-commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-commons/springboot-commons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/FtpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/FtpUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/chapter02-springboot-spring-security-oauth2/target/" />
@@ -165,36 +135,36 @@
         <counts>
           <entry key="LICENSE" value="1" />
           <entry key="class" value="13" />
-          <entry key="java" value="35" />
+          <entry key="java" value="39" />
           <entry key="md" value="1" />
           <entry key="pom" value="4" />
-          <entry key="xml" value="14" />
+          <entry key="xml" value="17" />
           <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="13" />
-          <entry key="JAVA" value="35" />
+          <entry key="JAVA" value="39" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="18" />
+          <entry key="XML" value="21" />
           <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
-          <entry key="java" value="1248" />
-          <entry key="xml" value="49" />
+          <entry key="java" value="1262" />
+          <entry key="xml" value="52" />
           <entry key="yml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1248" />
+          <entry key="JAVA" value="1262" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="XML" value="49" />
+          <entry key="XML" value="52" />
           <entry key="YAML" value="22" />
         </counts>
       </usages-collector>
@@ -206,22 +176,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/java/com/onnoa/springboot/security/jwt/SpringBootSecurityJWTApplication.java">
+        <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/FtpUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="232">
+              <caret line="35" column="85" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="85" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/PlaceholderHolder.java">
+        <entry file="file://$PROJECT_DIR$/springboot-commons/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -229,39 +196,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/PropertiesUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="435">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1536#1537#0" expanded="true" />
-                <element signature="e#1579#1580#0" expanded="true" />
-                <element signature="e#2045#2046#0" expanded="true" />
-                <element signature="e#2086#2087#0" expanded="true" />
-                <element signature="e#2602#2603#0" expanded="true" />
-                <element signature="e#2641#2642#0" expanded="true" />
-                <element signature="e#2936#2937#0" expanded="true" />
-                <element signature="e#2979#2980#0" expanded="true" />
-                <element signature="e#3531#3532#0" expanded="true" />
-                <element signature="e#3576#3577#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.0.RELEASE/spring-beans-5.2.0.RELEASE-sources.jar!/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer.java">
+        <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/BeanUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="210" column="24" selection-start-line="210" selection-start-column="24" selection-end-line="210" selection-end-column="24" />
+            <state relative-caret-position="647">
+              <caret line="463" column="5" selection-start-line="463" selection-start-column="5" selection-end-line="463" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.0.RELEASE/spring-beans-5.2.0.RELEASE-sources.jar!/org/springframework/beans/factory/config/PlaceholderConfigurerSupport.java">
+        <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/DateUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="217" column="49" selection-start-line="217" selection-start-column="29" selection-end-line="217" selection-end-column="49" />
+            <state relative-caret-position="87">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -352,16 +315,16 @@
         <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/date/DateUtils.java" />
         <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/date/DateUtil.java" />
         <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/DateUtil.java" />
-        <option value="$PROJECT_DIR$/springboot-commons/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/BeanUtil.java" />
         <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/threadpool/ThreadExecutor.java" />
         <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/PropertyHolder.java" />
-        <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/FtpUtil.java" />
         <option value="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/resources/application-local.yml" />
         <option value="$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/java/com/onnoa/springboot/security/jwt/SpringBootSecurityJWTApplication.java" />
         <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/PropertiesUtil.java" />
         <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/PlaceholderHolder.java" />
+        <option value="$PROJECT_DIR$/springboot-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/FtpUtil.java" />
       </list>
     </option>
   </component>
@@ -391,9 +354,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="709" />
-    <option name="y" value="44" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="740" />
+    <option name="y" value="46" />
     <option name="width" value="1505" />
     <option name="height" value="1055" />
   </component>
@@ -688,45 +651,47 @@
             <path>
               <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05-springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-commons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05-springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-commons" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05-springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05-springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-commons" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05-springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-commons" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jwt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05-springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-commons" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
@@ -748,9 +713,10 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573467451971" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573468079133" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="F:/work/dev/utils" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -920,7 +886,7 @@
       <workItem from="1573201152511" duration="977000" />
       <workItem from="1573202189836" duration="7324000" />
       <workItem from="1573443434116" duration="9271000" />
-      <workItem from="1573464428603" duration="2995000" />
+      <workItem from="1573464428603" duration="3528000" />
     </task>
     <servers />
   </component>
@@ -957,7 +923,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107557000" />
+    <option name="totallyTimeSpent" value="108090000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -969,7 +935,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="709" y="44" width="1505" height="1055" extended-state="0" />
+    <frame x="740" y="46" width="1505" height="1055" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49839744" visible="true" weight="0.20221607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1198,20 +1165,6 @@
     <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" selection-end-line="629" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-samples-dependencies/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter03-springboot-redission/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -1226,13 +1179,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-commons/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.0.RELEASE/spring-beans-5.2.0.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -1241,13 +1187,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/threadpool/ThreadExecutor.java" />
-    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/BeanUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="459" column="35" lean-forward="true" selection-start-line="459" selection-start-column="35" selection-end-line="459" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.0.RELEASE/spring-context-5.2.0.RELEASE.jar!/org/springframework/context/support/PropertySourcesPlaceholderConfigurer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5">
@@ -1287,6 +1226,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="191" column="13" lean-forward="true" selection-start-line="191" selection-start-column="13" selection-end-line="191" selection-end-column="13" />
+          <folding>
+            <element signature="e#6057#6058#0" expanded="true" />
+            <element signature="e#6109#6110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1308,16 +1251,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/FtpUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1370,26 +1303,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/PropertiesUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1579#1580#0" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-            <element signature="e#2086#2087#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2936#2937#0" expanded="true" />
-            <element signature="e#2979#2980#0" expanded="true" />
-            <element signature="e#3531#3532#0" expanded="true" />
-            <element signature="e#3576#3577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/PlaceholderHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -1402,8 +1315,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter05-springboot-security-jwt/src/main/java/com/onnoa/springboot/security/jwt/SpringBootSecurityJWTApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="116">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-samples-dependencies/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/BeanUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="463" column="5" selection-start-line="463" selection-start-column="5" selection-end-line="463" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/PropertiesUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-commons/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/FtpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="35" column="85" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="85" />
         </state>
       </provider>
     </entry>
