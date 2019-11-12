@@ -3,6 +3,8 @@ package com.onnoa.springboot.security.jwt;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 
 import java.util.Map;
 import java.util.Properties;
@@ -16,7 +18,8 @@ import java.util.Properties;
 @MapperScan("com.onnoa.springboot.security.jwt.mapper")
 public class SpringBootSecurityJWTApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootSecurityJWTApplication.class, args);
+        ApplicationContext applicationContext = SpringApplication.run(SpringBootSecurityJWTApplication.class, args);
+
 
         /*Properties properties = System.getProperties();
         String property = properties.getProperty("spring.profiles.active");

@@ -1,24 +1,17 @@
 package com.onnoa.springboot.redis.utils;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.fasterxml.jackson.annotation.PropertyAccessor;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
-import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
-import org.springframework.util.StringUtils;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisCluster;
 import redis.clients.jedis.JedisCommands;
@@ -31,22 +24,18 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @Description: redis 工具类
- * @Author: onnoA
- * @Date: 2019/11/1 15:47
- */
 @Configuration
-public class RedisUtil /*implements ApplicationContextAware*/ {
+public class RedisUtil /*implements ApplicationContextAware */{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RedisUtil.class);
 
     @Autowired
-    private RedisTemplate<String, Object> redisTemplate;
+    private RedisTemplate<String, String> redisTemplate;
 
     private final static String INCREMENTERROR = "递增因子必须大于0";
 
     private ThreadLocal<String> lockFlag = new ThreadLocal<>();
+
 
     private static final String UNLOCK_LUA;
 
@@ -74,11 +63,11 @@ public class RedisUtil /*implements ApplicationContextAware*/ {
      * @param time 时间(秒)
      * @return
      */
-    public boolean expire(BasePrefix keyPrefix, String key, long time) {
-        String realKey = keyPrefix.getPrefix() + key;
+    public boolean expire(KeyPrefix keyPrefix, String key, long time) {
+        String realKey = keyPrefix.prefix() + key;
         try {
             if (time > 0) {
-                redisTemplate.expire(realKey, keyPrefix.getExpiredTime(), TimeUnit.SECONDS);
+                redisTemplate.expire(realKey, keyPrefix.expiredTime(), TimeUnit.SECONDS);
             }
             return true;
         } catch (Exception e) {
@@ -92,18 +81,18 @@ public class RedisUtil /*implements ApplicationContextAware*/ {
      *
      * @return 时间(秒) 返回0代表为永久有效
      */
-    public long getExpire(BasePrefix keyPrefix, String key) {
-        String realKey = keyPrefix.getPrefix() + key;
+    public long getExpire(KeyPrefix keyPrefix, String key) {
+        String realKey = keyPrefix.prefix() + key;
         return redisTemplate.getExpire(realKey, TimeUnit.SECONDS);
     }
 
     /**
      * 判断key是否存在
      *
-     * @return true：存在 ，false：不存在
+     * @return true 存在 false不存在
      */
-    public boolean hasKey(BasePrefix keyPrefix, String key) {
-        String realKey = keyPrefix.getPrefix() + key;
+    public boolean hasKey(KeyPrefix keyPrefix, String key) {
+        String realKey = keyPrefix.prefix() + key;
         try {
             return redisTemplate.hasKey(realKey);
         } catch (Exception e) {
@@ -115,8 +104,8 @@ public class RedisUtil /*implements ApplicationContextAware*/ {
     /**
      * 删除缓存
      */
-    public void del(BasePrefix keyPrefix, String key) {
-        String realKey = keyPrefix.getPrefix() + key;
+    public void del(KeyPrefix keyPrefix, String key) {
+        String realKey = keyPrefix.prefix() + key;
         try {
             redisTemplate.delete(realKey);
         } catch (Exception e) {
@@ -127,8 +116,8 @@ public class RedisUtil /*implements ApplicationContextAware*/ {
     /**
      * 批量模糊删除缓存
      */
-    public void delBatch(BasePrefix keyPrefix, String key) {
-        String realKey = keyPrefix.getPrefix() + key;
+    public void delBatch(KeyPrefix keyPrefix, String key) {
+        String realKey = keyPrefix.prefix() + key;
         Set<String> keys = redisTemplate.keys(realKey + "*");
         try {
             redisTemplate.delete(keys);
@@ -142,9 +131,9 @@ public class RedisUtil /*implements ApplicationContextAware*/ {
      *
      * @return true成功 false 失败
      */
-    public boolean set(BasePrefix keyPrefix, String key, Object value) {
-        String realKey = keyPrefix.getPrefix() + key;
-        int time = keyPrefix.getExpiredTime();
+    public boolean set(KeyPrefix keyPrefix, String key, String value) {
+        String realKey = keyPrefix.prefix() + key;
+        int time = keyPrefix.expiredTime();
         try {
             if (time > 0) {
                 redisTemplate.opsForValue().set(realKey, value, time, TimeUnit.SECONDS);
@@ -158,7 +147,6 @@ public class RedisUtil /*implements ApplicationContextAware*/ {
         }
     }
 
-
     /**
      * 模糊查询redis
      *
@@ -166,8 +154,8 @@ public class RedisUtil /*implements ApplicationContextAware*/ {
      * @param key
      * @return
      */
-    public HashMap<String, String> getMap(BasePrefix keyPrefix, String key) {
-        String realKey = keyPrefix.getPrefix() + key;
+    public HashMap<String, String> getMap(KeyPrefix keyPrefix, String key) {
+        String realKey = keyPrefix.prefix() + key;
         Set<String> keys = redisTemplate.keys(realKey + "*");
         HashMap<String, String> map = new HashMap<>();
         for (String key1 : keys) {
@@ -183,16 +171,16 @@ public class RedisUtil /*implements ApplicationContextAware*/ {
      * @return 值
      */
 
-    public Object get(BasePrefix keyPrefix, String key) {
-        String realKey = keyPrefix.getPrefix() + key;
+    public Object get(KeyPrefix keyPrefix, String key) {
+        String realKey = keyPrefix.prefix() + key;
         return realKey == null ? null : redisTemplate.opsForValue().get(realKey);
     }
 
     /**
      * 递增
      */
-    public long incr(BasePrefix keyPrefix, String key, long delta) {
-        String realKey = keyPrefix.getPrefix() + key;
+    public long incr(KeyPrefix keyPrefix, String key, long delta) {
+        String realKey = keyPrefix.prefix() + key;
         if (delta < 0) {
             LOGGER.error("【RedisService】缓存递增存在异常,key={},msg={}", realKey, INCREMENTERROR);
         }
@@ -202,8 +190,8 @@ public class RedisUtil /*implements ApplicationContextAware*/ {
     /**
      * 递减
      */
-    public long decr(BasePrefix keyPrefix, String key, long delta) {
-        String realKey = keyPrefix.getPrefix() + key;
+    public long decr(KeyPrefix keyPrefix, String key, long delta) {
+        String realKey = keyPrefix.prefix() + key;
         if (delta < 0) {
             LOGGER.error("【RedisService】缓存递减存在异常,key={},msg={}", realKey, INCREMENTERROR);
         }
@@ -289,8 +277,7 @@ public class RedisUtil /*implements ApplicationContextAware*/ {
         return false;
     }
 
-
-   /* @Override
+  /*  @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         redisTemplate = (RedisTemplate<String, String>) applicationContext.getBean("redisTemplate");
         redisTemplate.setKeySerializer(new StringRedisSerializer());
@@ -298,5 +285,4 @@ public class RedisUtil /*implements ApplicationContextAware*/ {
         redisTemplate.setHashKeySerializer(new StringRedisSerializer());
         redisTemplate.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
     }*/
-
 }

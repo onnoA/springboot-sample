@@ -1,15 +1,10 @@
 
-qsquid:ModifiersOrderCheck/"EReorder the modifiers to comply with the Java Language Specification.(·ú«û8§­¿±â-
-~squid:UselessImportCheck"NRemove this unused import 'com.fasterxml.jackson.annotation.PropertyAccessor'.(·ØÉ“ÿÿÿÿÿ8®åÀ±â-
-esquid:S2142å"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8§­¿±â-
-csquid:S2583¼"DChange this condition so that it does not always evaluate to "false"(Øš¾™8§­¿±â-
-ssquid:UselessImportCheck"HRemove this unused import 'com.fasterxml.jackson.databind.ObjectMapper'.(´‘¨™8®åÀ±â-
-Œsquid:S1319©"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(§Ó©8§­¿±â-
-jsquid:CommentedOutCodeLine¦"<This block of commented-out lines of code should be removed.(¯¶…œ8§­¿±â-
-wsquid:UselessImportCheck"LRemove this unused import 'com.fasterxml.jackson.annotation.JsonAutoDetect'.(¾àÒ8®åÀ±â-
-_squid:S3457ã"AFormat specifiers should be used instead of string concatenation.(ğËİM8§­¿±â-
-squid:UselessImportCheck"]Remove this unused import 'org.springframework.data.redis.connection.RedisConnectionFactory'.(¬ÜôÍúÿÿÿÿ8ïüÃ±â-
-asquid:UselessImportCheck"6Remove this unused import 'javax.annotation.Resource'.(î¾Ì—8•ËÉ±â-
-Usquid:S10685"2Remove this unused "GET_EXPIRE_LUA" private field.(×‰êúÿÿÿÿ8§­¿±â-
-Usquid:S2629ã"7Use the built-in formatting to construct this argument.(ğËİM8§­¿±â-
-squid:UselessImportCheck"TRemove this unused import 'org.springframework.data.redis.core.StringRedisTemplate'.(Á•½8ìøü°â-
+jsquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(¯¶…œ8¿°Âíå-
+qsquid:ModifiersOrderCheck#"EReorder the modifiers to comply with the Java Language Specification.(·ú«û8ıØÁíå-
+_squid:S3457×"AFormat specifiers should be used instead of string concatenation.(ğËİM8ıØÁíå-
+Usquid:S2629×"7Use the built-in formatting to construct this argument.(ğËİM8ıØÁíå-
+Œsquid:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(Ö–ó§8ıØÁíå-
+Usquid:S1068*"2Remove this unused "GET_EXPIRE_LUA" private field.(×‰êúÿÿÿÿ8ıØÁíå-
+csquid:S2583°"DChange this condition so that it does not always evaluate to "false"(Øš¾™8ıØÁíå-
+esquid:S2142Ù"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ıØÁíå-
+asquid:UselessImportCheck"6Remove this unused import 'javax.annotation.Resource'.(î¾Ì—8Š©°ïå-

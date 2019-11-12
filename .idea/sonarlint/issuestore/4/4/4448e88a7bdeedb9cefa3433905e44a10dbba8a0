@@ -1,7 +1,5 @@
 
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(³ôÊÜ8œÂÎå-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(ç™şÿÿÿÿ8²ÎöÍå-
-U
-squid:S106"9Replace this use of System.out or System.err by a logger.(òçÈ,8¥µ‚Îå-
+squid:UselessImportCheck"WRemove this unused import 'org.springframework.context.ConfigurableApplicationContext'.(ÉšêC8»¥ËĞå-
+Zsquid:S1481"7Remove this unused "applicationContext" local variable.(Ô‡ÑŞùÿÿÿÿ8ŸæÊĞå-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¨ø«›ûÿÿÿÿ8ş‘Ïå-
+isquid:S1854"FRemove this useless assignment to local variable "applicationContext".(Ô‡ÑŞùÿÿÿÿ8ÃÈÊĞå-

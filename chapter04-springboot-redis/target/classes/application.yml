@@ -1,3 +1,4 @@
+
 spring:
   redis:
     # Redis 服务器地址
@@ -26,3 +27,5 @@ spring:
       shutdown-timeout: 100ms
       # 连接超时时间（毫秒）
     timeout: 3000ms
+server:
+  port: 9091

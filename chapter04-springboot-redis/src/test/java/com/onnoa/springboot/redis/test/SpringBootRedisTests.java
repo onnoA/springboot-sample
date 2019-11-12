@@ -1,9 +1,9 @@
 package com.onnoa.springboot.redis.test;
 
-import com.onnoa.springboot.redis.constant.TbUserRedisKey;
 import com.onnoa.springboot.redis.entity.TbUser;
-import com.onnoa.springboot.redis.utils.BasePrefix;
+import com.onnoa.springboot.redis.utils.KeyPrefix;
 import com.onnoa.springboot.redis.utils.RedisUtil;
+import com.onnoa.springboot.redis.utils.UserKey;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,25 +24,13 @@ public class SpringBootRedisTests {
     @Autowired
     private RedisUtil redisUtil;
 
+
     @Test
     public void redisTest() {
-        TbUser tbUser = new TbUser();
-        tbUser.setPhone("123456");
-        tbUser.setPhone("13422129567");
-        tbUser.setId(1l);
-        tbUser.setCreated(new Date());
-        //BasePrefix basePrefix = new BasePrefix("test:", 0);
-
-        redisUtil.set(new TbUserRedisKey(""),"tbUser",tbUser);
-       /* boolean boo = redisUtil.set(basePrefix, "tbUser", tbUser);
-        System.out.println(boo);*/
-        //redisUtil.del(basePrefix,"test");
+        UserKey userKey = new UserKey("redis", 3000);
+        boolean result = redisUtil.set(userKey, "test", "123456");
+        System.out.println("是否成功:" + result);
     }
 
-    @Test
-    public void getByKey() {
-        BasePrefix basePrefix = new BasePrefix("test");
-        TbUser tbUser = (TbUser) redisUtil.get(basePrefix, "test");
-        System.out.println(tbUser);
-    }
+
 }

@@ -1,12 +1,10 @@
 
- squid:UselessImportCheck"pRemove this unused import 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'.(Úûàşÿÿÿÿ8­µöÌå-
+usquid:UselessImportCheck"ERemove this unused import 'org.springframework.beans.BeansException'.(Æ¢ùìüÿÿÿÿ8á‘ßÏå-
+squid:UselessImportCheck	"VRemove this unused import 'org.springframework.core.env.ConfigurablePropertyResolver'.(ÏôÔ¬8á‘ßÏå-
+squid:UselessImportCheck"eRemove this unused import 'org.springframework.beans.factory.config.ConfigurableListableBeanFactory'.(“èµ8á‘ßÏå-
 squid:UselessImportCheck"cRemove this unused import 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer'.(åÀçP8›¾–Íå-
-«%squid:RedundantThrowsDeclarationCheck-"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(–Ùë¡8²¡«Íå-
-ysquid:CallToDeprecatedMethod-"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(–Ùë¡8²¡«Íå-
-Tsquid:S2696/"6Make the enclosing method "static" or remove this set.(°è”8²¡«Íå-
-«%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(·ã8³Ş Íå-
+Tsquid:S1068"1Remove this unused "propertiesMap" private field.(ÌÄÊ“üÿÿÿÿ8á‘ßÏå-
+\squid:UselessImportCheck"1Remove this unused import 'java.util.Properties'.(¬µ²8á‘ßÏå-
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8á‘ßÏå-
 ’squid:UselessImportCheck"bRemove this unused import 'org.springframework.beans.factory.config.PlaceholderConfigurerSupport'.(Â°›—úÿÿÿÿ8¯êóÌå-
-msquid:CallToDeprecatedMethod."9Remove this use of "processProperties"; it is deprecated.(ü»ñ™úÿÿÿÿ8²¡«Íå-
-squid:S1450"\Remove the "propertiesMap" field and declare it as a local variable in the relevant methods.(ÌÄÊ“üÿÿÿÿ8œÄíÍå-
-nsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(ë·ºşşÿÿÿÿ8œÄíÍå-
-Fsquid:S1185"(Remove this method to simply inherit it.(·ã8œÄíÍå-
+ squid:UselessImportCheck"pRemove this unused import 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'.(Úûàşÿÿÿÿ8­µöÌå-
