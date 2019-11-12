@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d255ccc1-c1fd-49c0-bd35-e89eb68ffc6e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/2414625bf7f82b85d632d67f3a03f45f33bcc591" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/2414625bf7f82b85d632d67f3a03f45f33bcc591" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8a01ae29f2d5c5f89f534fecb4a47d4b4c43eea" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8a01ae29f2d5c5f89f534fecb4a47d4b4c43eea" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f61c61aa035e9a41b272699b05dea0e884a0756d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f61c61aa035e9a41b272699b05dea0e884a0756d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/1567f0fa09d838b6c193f2aa67dd7489544c9f31" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d6384d533d3cc81a3b0162d085e4a570ca7ab3f4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/zookeeperlock/AbstractZookeeperLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/zookeeperlock/IZookeeperLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/zookeeperlock/ZookeeperDistributedLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03-springboot-redission/src/main/java/com/onnoa/chapter03/springboot/redission/Chapter03SpringbootRedissionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03-springboot-redission/src/main/java/com/onnoa/chapter03/springboot/redission/Chapter03SpringbootRedissionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03-springboot-redission/src/main/java/com/onnoa/chapter03/springboot/redission/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03-springboot-redission/src/main/java/com/onnoa/chapter03/springboot/redission/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03-springboot-redission/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03-springboot-redission/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter05-springboot-security-jwt/chapter05-springboot-security-jwt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter05-springboot-security-jwt/chapter05-springboot-security-jwt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-commons/springboot-commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-commons/springboot-commons.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -362,6 +368,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -380,8 +387,11 @@
       <recent name="com.onnoa.springboot.redis.utils.redislock" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\code\SpringBoot集成项目\springboot-sample\chapter04-springboot-redis\src\main\java\com\onnoa\springboot\redis\redislock" />
-      <recent name="F:\code\SpringBoot集成项目\springboot-sample\chapter04-springboot-redis\src\main\java\com\onnoa\springboot\redis\utils\redislock" />
+      <recent name="D:\workspace\springboot-sample\chapter05-springboot-security-jwt" />
+      <recent name="D:\workspace\springboot-sample\chapter04-springboot-redis" />
+      <recent name="D:\workspace\springboot-sample\chapter02-springboot-spring-security-oauth2\spring-boot-security-oauth2-server" />
+      <recent name="D:\workspace\springboot-sample\chapter02-springboot-spring-security-oauth2\spring-boot-security-oauth2-resource" />
+      <recent name="D:\workspace\springboot-sample\chapter02-springboot-spring-security-oauth2\spring-boot-security-oauth2-dependencies" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -574,6 +584,14 @@
       <workItem from="1573520239145" duration="14174000" />
       <workItem from="1573548194450" duration="3877000" />
     </task>
+    <task id="LOCAL-00001" summary="ftp">
+      <created>1573572149844</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573572149845</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
