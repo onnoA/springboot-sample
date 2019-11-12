@@ -1,5 +1,6 @@
 package com.onnoa.chapter03.springboot.redission.controller;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.redisson.Redisson;
 import org.redisson.api.RLock;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,26 @@ public class IndexController {
     @Autowired private Redisson redisson;
 
     private int index = 0;
+
+    @RequestMapping(value = "redis_lock",method = RequestMethod.GET)
+    public String redisLock(){
+        String localKey = "product_id";
+        Boolean result = redisTemplate.opsForValue().setIfAbsent(localKey,"hehe",10,TimeUnit.SECONDS);
+        if(!result){
+            return "error";
+        }
+        int stock = Integer.parseInt(redisTemplate.opsForValue().get("stock"));
+        if(stock > 0){
+            int realStock = stock -1;
+            redisTemplate.opsForValue().set("stock",realStock+"");
+            System.out.println("库存扣减成功，剩余库存:"+realStock);
+        }else{
+            System.out.println("库存不足，扣减失败!");
+        }
+        return "end";
+    }
+
+
 
     /**
      * 查询是否健康

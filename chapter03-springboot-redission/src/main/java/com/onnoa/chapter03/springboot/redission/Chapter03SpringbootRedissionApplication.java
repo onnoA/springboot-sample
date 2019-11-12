@@ -13,11 +13,26 @@ public class Chapter03SpringbootRedissionApplication {
         SpringApplication.run(Chapter03SpringbootRedissionApplication.class, args);
     }
 
+    /**
+     * 单机
+     * @return
+     */
     @Bean
     public Redisson redisson(){
         Config config = new Config();
-        config.useSingleServer().setAddress("redis://localhost:6379");
+        config.useSingleServer().setAddress("redis://localhost:6379").setDatabase(0);
         return (Redisson)Redisson.create(config);
+    }
+
+    /**
+     * 集群
+     * @return
+     */
+    @Bean
+    public Redission redission(){
+        Config config = new Config();
+        config.useClusterServers()
+
     }
 
 
