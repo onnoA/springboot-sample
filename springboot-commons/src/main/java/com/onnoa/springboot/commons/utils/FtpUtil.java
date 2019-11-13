@@ -218,7 +218,7 @@ public class FtpUtil {
 
     /**
      * NIO 读取文件 效率高
-     * @author zhangshujian
+     * @author onnoA
      *
      * @param filename
      * @return

@@ -1,12 +1,9 @@
 
-dsquid:S11920"FDefine a constant instead of duplicating this literal "test1" 3 times.(Õ¿½Ï8Ñœçøå-
-hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¹ìŠj8Ñœçøå-
 [
-squid:S1062"9Replace this use of System.out or System.err by a logger.(€ãìÿÿÿÿÿ8Ñœçøå-
-[
-squid:S1068"9Replace this use of System.out or System.err by a logger.(€ãìÿÿÿÿÿ8Ñœçøå-
-[
-squid:S106F"9Replace this use of System.out or System.err by a logger.(ÂŸØäøÿÿÿÿ8Ñœçøå-
-usquid:UselessImportCheck"ERemove this unused import 'com.onnoa.springboot.redis.utils.UserKey'.(©¡òıÿÿÿÿÿ8Ñœçøå-
-{squid:UselessImportCheck"QRemove this unused import 'com.onnoa.springboot.redis.lock.RedisDistributedLock'.(¯ûÍ8Ñœçøå-
-Fsquid:S1148>"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñœçøå-
+squid:S1065"9Replace this use of System.out or System.err by a logger.(Àä›şÿÿÿÿ8ş¡æ-
+[squid:UselessImportCheck"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8¸†Ÿæ-
+asquid:UselessImportCheck"6Remove this unused import 'lombok.extern.log4j.Log4j'.(ñÔêĞ8ş¡æ-
+dsquid:S1192%"FDefine a constant instead of duplicating this literal "stock" 3 times.(¨©¯„8ş¡æ-
+vsquid:UselessImportCheck"KRemove this unused import 'com.onnoa.springboot.redis.redislock.RedisLock'.(›æÁÚ8ş¡æ-
+~squid:UselessImportCheck"NRemove this unused import 'org.springframework.data.redis.core.RedisTemplate'.(–ª¡Çøÿÿÿÿ8ş¡æ-
+esquid:UselessImportCheck":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8¸†Ÿæ-
