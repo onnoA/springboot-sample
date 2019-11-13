@@ -1,8 +1,8 @@
 
 Gsquid:S1148Η"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8΄¦’Με-
-hsquid:CallToDeprecatedMethodΪ"3Remove this use of "instantiate"; it is deprecated.(’£¥ϋÿÿÿÿ8΄¦’Με-
-]squid:S1118":Add a private constructor to hide the implicit public one.(υ€ύÿÿÿÿ8΅Α³Με-
 w
 squid:S135Ώ"YReduce the total number of break and continue statements in this loop to use at most one.(ΒΔƒ­8΄¦’Με-
 Gsquid:S1905Ό"(Remove this unnecessary cast to "Class".(θωξ8΄¦’Με-
 :squid:S3626Ο"Remove this redundant jump.(Ι©ƒ8΄¦’Με-
+]squid:S1118":Add a private constructor to hide the implicit public one.(ο±¶χύÿÿÿÿ8΅Α³Με-
+hsquid:CallToDeprecatedMethodΪ"3Remove this use of "instantiate"; it is deprecated.(’£¥ϋÿÿÿÿ8΄¦’Με-

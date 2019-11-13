@@ -1,18 +1,17 @@
 
-dsquid:S3457S"AFormat specifiers should be used instead of string concatenation.(ºÕñÿÿÿÿÿ8áŠüÏå-
-{squid:S2629Å"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(Îïÿ±8éÌÌå-
-msquid:S4042”"IUse "java.nio.Files#delete" here for better messages on error conditions.(áùˆ«ûÿÿÿÿ8éÌÌå-
-Nsquid:S2093ê"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8éÌÌå-
-csquid:CallToDeprecatedMethodZ"4Remove this use of "closeQuietly"; it is deprecated.(Ùí¶„8áŠüÏå-
-Esquid:S1168€"&Return an empty array instead of null.(¥¹ï8éÌÌå-
-Gsquid:S1148ó"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8éÌÌå-
-]squid:S1118":Add a private constructor to hide the implicit public one.(¿“Ö‚şÿÿÿÿ8éÌÌå-
-`squid:S3457Å"AFormat specifiers should be used instead of string concatenation.(Îïÿ±8éÌÌå-
-Gsquid:S1148ø"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8éÌÌå-
-zsquid:S1192~"\Define a constant instead of duplicating this literal "è¿æ¥ftpæœåŠ¡å™¨å¤±è´¥ï¼" 4 times.(ÇÎ¶™8İ”şÏå-
-psquid:S2095Æ"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(šä„“şÿÿÿÿ8éÌÌå-
-Gsquid:S1148ı"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8éÌÌå-
-Isquid:S1168B"+Return an empty collection instead of null.(¥¹ï8”ßñÏå-
-ssquid:S00100Ô"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ôâ‡ùÿÿÿÿ8éÌÌå-
-dsquid:S2259ö"EA "NullPointerException" could be thrown; "channel" is nullable here.(½¥‘ù8éÌÌå-
-ssquid:S00100Â"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ü¤ˆıÿÿÿÿ8éÌÌå-
+zsquid:S1192"\Define a constant instead of duplicating this literal "è¿æ¥ftpæœåŠ¡å™¨å¤±è´¥ï¼" 4 times.(ÇÎ¶™8İ”şÏå-
+]squid:S1118":Add a private constructor to hide the implicit public one.(¿“Ö‚şÿÿÿÿ8éÌÌå-
+{squid:S2629Æ"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(Îïÿ±8éÌÌå-
+dsquid:S2259÷"EA "NullPointerException" could be thrown; "channel" is nullable here.(½¥‘ù8éÌÌå-
+Esquid:S1168"&Return an empty array instead of null.(¥¹ï8éÌÌå-
+Nsquid:S2093ë"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8éÌÌå-
+Isquid:S1168C"+Return an empty collection instead of null.(¥¹ï8”ßñÏå-
+Gsquid:S1148ş"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8éÌÌå-
+dsquid:S3457T"AFormat specifiers should be used instead of string concatenation.(ºÕñÿÿÿÿÿ8áŠüÏå-
+ssquid:S00100Õ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ôâ‡ùÿÿÿÿ8éÌÌå-
+Gsquid:S1148ù"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8éÌÌå-
+Gsquid:S1148ô"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8éÌÌå-
+ssquid:S00100Ã"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ü¤ˆıÿÿÿÿ8éÌÌå-
+`squid:S3457Æ"AFormat specifiers should be used instead of string concatenation.(Îïÿ±8éÌÌå-
+psquid:S2095Ç"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(šä„“şÿÿÿÿ8éÌÌå-
+msquid:S4042•"IUse "java.nio.Files#delete" here for better messages on error conditions.(áùˆ«ûÿÿÿÿ8éÌÌå-

@@ -2,6 +2,10 @@ package com.onnoa.springboot.redis.utils;
 
 public class UserKey extends BasePrefix {
 
+    public UserKey(String prefix){
+        super(prefix);
+    }
+
     public UserKey(String prefix, int expiredTime) {
         super(prefix, expiredTime);
     }

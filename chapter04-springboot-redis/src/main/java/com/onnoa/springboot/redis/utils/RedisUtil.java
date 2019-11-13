@@ -4,7 +4,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Configuration;
@@ -12,24 +11,30 @@ import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
-import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisCluster;
 import redis.clients.jedis.JedisCommands;
+import redis.clients.jedis.Jedis;
 
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 功能描述: Redis 操作工具类
+ *
+ * @auther: onnoA
+ * @date: 2019/11/13 16:01
+ */
 @Configuration
-public class RedisUtil /*implements ApplicationContextAware */{
+// 也可在启动类进行注入
+public class RedisUtil implements ApplicationContextAware {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RedisUtil.class);
 
-    @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
     private final static String INCREMENTERROR = "递增因子必须大于0";
@@ -172,8 +177,12 @@ public class RedisUtil /*implements ApplicationContextAware */{
      */
 
     public Object get(KeyPrefix keyPrefix, String key) {
-        String realKey = keyPrefix.prefix() + key;
+        String realKey = Objects.isNull(keyPrefix.prefix()) ? "" : keyPrefix.prefix() + key;
         return realKey == null ? null : redisTemplate.opsForValue().get(realKey);
+    }
+
+    public String get(String key) {
+        return key == null ? null : redisTemplate.opsForValue().get(key);
     }
 
     /**
@@ -277,12 +286,12 @@ public class RedisUtil /*implements ApplicationContextAware */{
         return false;
     }
 
-  /*  @Override
+    @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         redisTemplate = (RedisTemplate<String, String>) applicationContext.getBean("redisTemplate");
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
         redisTemplate.setHashKeySerializer(new StringRedisSerializer());
         redisTemplate.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
-    }*/
+    }
 }

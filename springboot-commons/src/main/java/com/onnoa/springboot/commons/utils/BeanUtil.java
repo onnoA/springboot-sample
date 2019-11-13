@@ -23,7 +23,7 @@ import java.util.Map;
  * @Author: onnoA
  * @Date: 2019/11/11 16:09
  */
-public abstract class BeanUtil {
+public class BeanUtil {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BeanUtils.class);
     private static final String BEANS = "beans";

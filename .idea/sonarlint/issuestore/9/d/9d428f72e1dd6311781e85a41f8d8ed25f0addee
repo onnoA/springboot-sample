@@ -1,10 +1,16 @@
 
 usquid:UselessImportCheck"ERemove this unused import 'org.springframework.beans.BeansException'.(Æ¢ùìüÿÿÿÿ8á‘ßÏå-
-squid:UselessImportCheck	"VRemove this unused import 'org.springframework.core.env.ConfigurablePropertyResolver'.(ÏôÔ¬8á‘ßÏå-
-squid:UselessImportCheck"eRemove this unused import 'org.springframework.beans.factory.config.ConfigurableListableBeanFactory'.(“èµ8á‘ßÏå-
-squid:UselessImportCheck"cRemove this unused import 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer'.(åÀçP8›¾–Íå-
-Tsquid:S1068"1Remove this unused "propertiesMap" private field.(ÌÄÊ“üÿÿÿÿ8á‘ßÏå-
-\squid:UselessImportCheck"1Remove this unused import 'java.util.Properties'.(¬µ²8á‘ßÏå-
-^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8á‘ßÏå-
-’squid:UselessImportCheck"bRemove this unused import 'org.springframework.beans.factory.config.PlaceholderConfigurerSupport'.(Â°›—úÿÿÿÿ8¯êóÌå-
  squid:UselessImportCheck"pRemove this unused import 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'.(Úûàşÿÿÿÿ8­µöÌå-
+squid:UselessImportCheck"cRemove this unused import 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer'.(åÀçP8›¾–Íå-
+squid:UselessImportCheck	"VRemove this unused import 'org.springframework.core.env.ConfigurablePropertyResolver'.(ÏôÔ¬8á‘ßÏå-
+\squid:UselessImportCheck"1Remove this unused import 'java.util.Properties'.(¬µ²8á‘ßÏå-
+squid:UselessImportCheck"eRemove this unused import 'org.springframework.beans.factory.config.ConfigurableListableBeanFactory'.(“èµ8á‘ßÏå-
+’squid:UselessImportCheck"bRemove this unused import 'org.springframework.beans.factory.config.PlaceholderConfigurerSupport'.(Â°›—úÿÿÿÿ8¯êóÌå-
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8á‘ßÏå-
+isquid:S2184!"FCast one of the operands of this multiplication operation to a "long".(Ú»»íÿÿÿÿÿ8÷®Í–æ-
+Tsquid:S1068"1Remove this unused "propertiesMap" private field.(ÌÄÊ“üÿÿÿÿ8÷®Í–æ-
+[
+squid:S106+"9Replace this use of System.out or System.err by a logger.(éĞ«şÿÿÿÿ8÷®Í–æ-
+dsquid:S2142#"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8÷®Í–æ-
+Ksquid:S1604("(Make this anonymous inner class a lambda(Ãø†Ëùÿÿÿÿ8÷®Í–æ-
+Fsquid:S1148%"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8÷®Í–æ-

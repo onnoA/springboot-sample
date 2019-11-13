@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d255ccc1-c1fd-49c0-bd35-e89eb68ffc6e" name="Default Changelist" comment="" />
+    <list default="true" id="d255ccc1-c1fd-49c0-bd35-e89eb68ffc6e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-commons/target/" />
+    <ignored path="$PROJECT_DIR$/chapter03-springboot-redission/target/" />
+    <ignored path="$PROJECT_DIR$/chapter02-springboot-spring-security-oauth2/spring-boot-security-oauth2-server/target/" />
+    <ignored path="$PROJECT_DIR$/chapter02-springboot-spring-security-oauth2/target/" />
+    <ignored path="$PROJECT_DIR$/chapter04-springboot-redis/target/" />
+    <ignored path="$PROJECT_DIR$/chapter01-springboot-mybatis-plus/target/" />
+    <ignored path="$PROJECT_DIR$/chapter02-springboot-spring-security-oauth2/spring-boot-security-oauth2-dependencies/target/" />
+    <ignored path="$PROJECT_DIR$/chapter05-springboot-security-jwt/target/" />
+    <ignored path="$PROJECT_DIR$/chapter02-springboot-spring-security-oauth2/spring-boot-security-oauth2-resource/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-samples-dependencies/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/springboot_sample$SpringBootRedisApplication.ic" NAME="SpringBootRedisApplication Coverage Results" MODIFIED="1573630591804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -38,8 +54,104 @@
     </expand>
     <select />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-910124975">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="18" />
+          <entry key="java" value="65" />
+          <entry key="pom" value="1" />
+          <entry key="xml" value="15" />
+          <entry key="yml" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="18" />
+          <entry key="JAVA" value="65" />
+          <entry key="XML" value="16" />
+          <entry key="YAML" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1402" />
+          <entry key="txt" value="19" />
+          <entry key="xml" value="89" />
+          <entry key="yml" value="25" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1402" />
+          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="XML" value="89" />
+          <entry key="YAML" value="25" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="springboot-samples" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/controller/TestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="42" column="68" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/utils/UserKey.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="e#119#120#0" expanded="true" />
+                <element signature="e#148#149#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/utils/RedisUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="921">
+              <caret line="222" column="17" lean-forward="true" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5513#5514#0" expanded="true" />
+                <element signature="e#5593#5594#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,8 +163,45 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>deleteDirectory</find>
+      <find>toByteArray</find>
+      <find>CreateTemporaryFile</find>
+      <find>upload</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/chapter03-springboot-redission/src/main/java/com/onnoa/chapter03/springboot/redission/Chapter03SpringbootRedissionApplication.java" />
+        <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/PlaceholderHolder.java" />
+        <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/BeanUtil.java" />
+        <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/FtpUtil.java" />
+        <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/FileUtil.java" />
+        <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/HttpClientUtil.java" />
+        <option value="$PROJECT_DIR$/springboot-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/XMLUtil.java" />
+        <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/MoneyArithUtil.java" />
+        <option value="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/JsonUtil.java" />
+        <option value="$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/utils/UserKey.java" />
+        <option value="$PROJECT_DIR$/chapter01-springboot-mybatis-plus/src/main/java/com/onnoa/springboot/mybatis/plus/entity/TbUser.java" />
+        <option value="$PROJECT_DIR$/chapter04-springboot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/SpringBootRedisApplication.java" />
+        <option value="$PROJECT_DIR$/chapter04-springboot-redis/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/utils/RedisUtil.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -67,6 +216,18 @@
         <option value="default" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-102" />
+    <option name="y" value="42" />
+    <option name="width" value="1535" />
+    <option name="height" value="998" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -344,6 +505,99 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter04-springboot-redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter04-springboot-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter04-springboot-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter04-springboot-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter04-springboot-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter04-springboot-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter04-springboot-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="redislock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter04-springboot-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-sample" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter04-springboot-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
@@ -355,12 +609,12 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573553476684" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573641035370" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/chapter05-springboot-security-jwt" />
+    <property name="last_opened_file_path" value="F:/work/utopa-service-pay" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24898374" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -370,11 +624,11 @@
       <recent name="com.onnoa.springboot.redis.utils.redislock" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\code\SpringBoot集成项目\springboot-sample\springboot-commons" />
       <recent name="D:\workspace\springboot-sample\chapter05-springboot-security-jwt" />
       <recent name="D:\workspace\springboot-sample\chapter04-springboot-redis" />
       <recent name="D:\workspace\springboot-sample\chapter02-springboot-spring-security-oauth2\spring-boot-security-oauth2-server" />
       <recent name="D:\workspace\springboot-sample\chapter02-springboot-spring-security-oauth2\spring-boot-security-oauth2-resource" />
-      <recent name="D:\workspace\springboot-sample\chapter02-springboot-spring-security-oauth2\spring-boot-security-oauth2-dependencies" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -393,9 +647,35 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.17325392" />
+    <option name="contentProportion" value="0.14022739" />
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootRedisApplication">
+  <component name="RunManager" selected="Application.TestController">
+    <configuration name="PlaceholderHolder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.onnoa.springboot.commons.utils.PlaceholderHolder" />
+      <module name="springboot-commons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.onnoa.springboot.commons.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.onnoa.springboot.redis.controller.TestController" />
+      <module name="chapter04-springboot-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.onnoa.springboot.redis.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UmsAdminController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.onnoa.springboot.security.jwt.controller.UmsAdminController" />
       <module name="chapter05-springboot-security-jwt" />
@@ -405,22 +685,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringBootRedisTests.getByKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="chapter04-springboot-redis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.onnoa.springboot.redis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.onnoa.springboot.redis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.onnoa.springboot.redis.test.SpringBootRedisTests" />
-      <option name="METHOD_NAME" value="getByKey" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -436,22 +700,6 @@
       <option name="PACKAGE_NAME" value="com.onnoa.springboot.redis.test" />
       <option name="MAIN_CLASS_NAME" value="com.onnoa.springboot.redis.test.SpringBootRedisTests" />
       <option name="METHOD_NAME" value="redisTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringBootSecurityOAuth2ApplicationTests.getEncoderPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-boot-security-oauth2-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.onnoa.springboot.security.oauth2.server.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.onnoa.springboot.security.oauth2.server.test" />
-      <option name="MAIN_CLASS_NAME" value="com.onnoa.springboot.security.oauth2.server.test.SpringBootSecurityOAuth2ApplicationTests" />
-      <option name="METHOD_NAME" value="getEncoderPassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -509,24 +757,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.UmsAdminController" />
-      <item itemvalue="JUnit.SpringBootSecurityOAuth2ApplicationTests.getEncoderPassword" />
-      <item itemvalue="JUnit.SpringBootRedisTests.redisTest" />
-      <item itemvalue="JUnit.SpringBootRedisTests.getByKey" />
       <item itemvalue="Spring Boot.Chapter03SpringbootRedissionApplication" />
       <item itemvalue="Spring Boot.SpringBootMybatisPlusApplication" />
       <item itemvalue="Spring Boot.SpringBootSecurityOAuth2Application" />
       <item itemvalue="Spring Boot.OAuth2ResourceApplication" />
       <item itemvalue="Spring Boot.SpringBootRedisApplication" />
+      <item itemvalue="Application.UmsAdminController" />
+      <item itemvalue="JUnit.SpringBootRedisTests.redisTest" />
       <item itemvalue="Spring Boot.SpringBootSecurityJWTApplication" />
+      <item itemvalue="Application.PlaceholderHolder" />
+      <item itemvalue="Application.TestController" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestController" />
+        <item itemvalue="Application.PlaceholderHolder" />
         <item itemvalue="JUnit.SpringBootRedisTests.redisTest" />
         <item itemvalue="Application.UmsAdminController" />
         <item itemvalue="Spring Boot.SpringBootSecurityJWTApplication" />
-        <item itemvalue="JUnit.SpringBootRedisTests.getByKey" />
-        <item itemvalue="JUnit.SpringBootSecurityOAuth2ApplicationTests.getEncoderPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -566,6 +814,7 @@
       <workItem from="1573464428603" duration="4966000" />
       <workItem from="1573520239145" duration="14174000" />
       <workItem from="1573548194450" duration="3877000" />
+      <workItem from="1573634572300" duration="6414000" />
     </task>
     <task id="LOCAL-00001" summary="ftp">
       <created>1573572149844</created>
@@ -574,7 +823,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573572149845</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="工具类">
+      <created>1573610801933</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573610801933</updated>
+    </task>
+    <task id="LOCAL-00003" summary="redis 实现分布式锁">
+      <created>1573640910732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573640910732</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -609,6 +872,9 @@
       <configuration name="SpringBootRedisTests.redisTest" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22288000" />
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -617,6 +883,56 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49839744" visible="true" weight="0.19626667" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="JRebel" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" sideWeight="0.5016026" side_tool="true" weight="0.16471216" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Run Dashboard" order="0" sideWeight="0.4992" weight="0.27006507" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.15618221" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.27006507" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32934782" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008" side_tool="true" weight="0.26030368" />
+      <window_info anchor="bottom" id="SonarLint" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" weight="0.13001083" />
+      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Executor" order="16" />
+      <window_info anchor="bottom" id="JRebel Console" order="17" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="18" weight="0.23861171" />
+      <window_info anchor="bottom" id="Database Console" order="19" weight="0.219935" />
+      <window_info anchor="bottom" id="Tail" order="20" />
+      <window_info anchor="right" id="Mybatis datasource" order="0" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" visible="true" weight="0.06453333" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.10293333" />
+      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.4984756" visible="true" weight="0.07733333" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32995737" />
+      <window_info anchor="right" id="Key Promoter X" order="11" />
+      <window_info anchor="right" id="ASM" order="12" />
+      <window_info anchor="right" id="Coverage" order="13" sideWeight="0.5015244" side_tool="true" weight="0.05597015" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -627,16 +943,26 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="COLUMN_ORDER" />
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
             </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ftp" />
-    <option name="LAST_COMMIT_MESSAGE" value="ftp" />
+    <MESSAGE value="工具类" />
+    <MESSAGE value="redis 实现分布式锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis 实现分布式锁" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -644,6 +970,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>redisUtil.get(&quot;test&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>result.hasErrors()</expression-string>
         <language-id>JAVA</language-id>
@@ -655,6 +986,377 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jdom/jdom/1.1.3/jdom-1.1.3.jar!/org/jdom/Element.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jdom/jdom/2.0.2/jdom-2.0.2.jar!/org/jdom2/input/SAXBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-commons/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="89" selection-start-line="71" selection-start-column="8" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/XMLUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="276" column="9" lean-forward="true" selection-start-line="276" selection-start-column="9" selection-end-line="276" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/MoneyArithUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/BeanUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.0/jackson-databind-2.9.0.jar!/com/fasterxml/jackson/databind/type/TypeFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="325" column="20" selection-start-line="325" selection-start-column="20" selection-end-line="325" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.0/jackson-databind-2.9.0.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="1132" column="104" selection-start-line="1132" selection-start-column="104" selection-end-line="1132" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/JsonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="91" column="9" lean-forward="true" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/JedisCommands.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/utils/PrefixConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/config/RedisConfiguration.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.0.RELEASE/spring-data-redis-2.2.0.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="35" column="54" lean-forward="true" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.0.RELEASE/spring-data-redis-2.2.0.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.0.0/jedis-3.0.0.jar!/redis/clients/jedis/commands/JedisCommands.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.1/jedis-2.9.1.jar!/redis/clients/jedis/JedisCommands.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/IDEATools/jdk1.8.0_101/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="380" selection-start-line="380" selection-end-line="380" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/lock/AbstractDistributedLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/lock/DistributedLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/lock/RedisDistributedLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2088">
+          <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/IDEATools/jdk1.8.0_101/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="423" selection-start-line="423" selection-end-line="423" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter01-springboot-mybatis-plus/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter01-springboot-mybatis-plus/src/main/java/com/onnoa/springboot/mybatis/plus/aop/DataSourceAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter01-springboot-mybatis-plus/src/main/java/com/onnoa/springboot/mybatis/plus/entity/TbUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter01-springboot-mybatis-plus/src/main/java/com/onnoa/springboot/mybatis/plus/entity/OrderInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter01-springboot-mybatis-plus/src/main/java/com/onnoa/springboot/mybatis/plus/multidatasourceconfig/DataSourceContextHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter01-springboot-mybatis-plus/src/main/java/com/onnoa/springboot/mybatis/plus/multidatasourceconfig/DynamicDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-test/2.2.0.RELEASE/spring-boot-starter-test-2.2.0.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter01-springboot-mybatis-plus/src/main/java/com/onnoa/springboot/mybatis/plus/SpringBootMybatisPlusApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.0.RELEASE/spring-boot-autoconfigure-2.2.0.RELEASE.jar!/org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="876">
+          <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/entity/TbUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-609">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-samples-dependencies/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-232">
+          <caret line="55" column="29" selection-start-line="48" selection-start-column="11" selection-end-line="55" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.10.RELEASE/spring-data-redis-2.1.10.RELEASE-sources.jar!/org/springframework/data/redis/core/ValueOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="204" column="6" selection-start-line="204" selection-start-column="6" selection-end-line="204" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter05-springboot-security-jwt/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="13" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.9.RELEASE/spring-webmvc-5.1.9.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/IDEATools/jdk1.8.0_101/src.zip!/java/lang/ThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="198" column="16" selection-start-line="198" selection-start-column="16" selection-end-line="198" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/redislock/DistributedLockAspectConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/utils/KeyPrefix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/utils/BasePrefix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/redislock/RedisLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.10.2/jedis-2.10.2.jar!/redis/clients/jedis/JedisCommands.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/utils/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="921">
+          <caret line="222" column="17" lean-forward="true" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5513#5514#0" expanded="true" />
+            <element signature="e#5593#5594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/SpringBootRedisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/utils/UserKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#119#120#0" expanded="true" />
+            <element signature="e#148#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter04-springboot-redis/src/main/java/com/onnoa/springboot/redis/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="42" column="68" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

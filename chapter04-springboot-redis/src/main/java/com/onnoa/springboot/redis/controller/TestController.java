@@ -1,9 +1,11 @@
 package com.onnoa.springboot.redis.controller;
 
-import com.onnoa.springboot.redis.lock.RedisDistributedLock;
 import com.onnoa.springboot.redis.redislock.RedisLock;
+import com.onnoa.springboot.redis.utils.PrefixConstant;
 import com.onnoa.springboot.redis.utils.RedisUtil;
 import com.onnoa.springboot.redis.utils.UserKey;
+import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -19,13 +21,8 @@ import java.util.concurrent.TimeUnit;
  * @Date: 2019/11/12 10:56
  */
 @RestController
+@Slf4j
 public class TestController {
-
-    /*@Autowired
-    private RedisTemplate<Object, Object> redisTemplate;*/
-
-    @Autowired
-    private RedisTemplate redisTemplate;
 
     @Value("${server.port}")
     private String port;
@@ -33,41 +30,34 @@ public class TestController {
     @Autowired
     private RedisUtil redisUtil;
 
-    @RequestMapping("/index")
+    @RequestMapping(value = "/redis_set")
+    public boolean set() {
+        UserKey userKey = new UserKey(PrefixConstant.TBUSER);
+        return redisUtil.set(userKey, "stock", String.valueOf(50));
+    }
+
+    @RequestMapping("/redis_lock")
     public String index() {
-        return "hello nginx" + port;
-    }
-
-
-    @RedisLock
-    @RequestMapping(value = "redis_stock")
-    public synchronized String redisTest() {
-        String valueStr = UUID.randomUUID().toString();
-        Integer realValue = 0;
+        Integer realStock = 0;
         try {
-            Boolean result = redisTemplate.opsForValue().setIfAbsent("test1", valueStr, 30000L, TimeUnit.SECONDS);
+            boolean result = redisUtil.lock("test", 30000L, 1, 1000L);
             if (!result) {
-                System.out.println("抢购失败");
-                return "抢购失败";
+                return "抢购失败，请重试.....";
             }
-            Integer stock = (Integer) redisTemplate.opsForValue().get("stock");
-
-            if(stock <= 0){
-                System.out.println("抢购失败");
-                return "抢购失败";
+            UserKey userKey = new UserKey(PrefixConstant.TBUSER);
+            Integer stock = new Integer((String) redisUtil.get(userKey, "stock"));
+            if (stock > 0) {
+                realStock = stock - 1;
+                System.out.println("抢购成功......剩余库存" + realStock);
+                redisUtil.set(userKey, "stock", String.valueOf(realStock));
+            } else {
+                return "库存不足，抢购失败....";
             }
-            realValue =stock - 1;
-            redisTemplate.opsForValue().set("stock", realValue);
-        } catch (Exception e) {
-            e.printStackTrace();
         } finally {
-            String value = (String) redisTemplate.opsForValue().get("test1");
-            if (valueStr.equals(value)) {
-                // 释放锁
-                redisTemplate.delete("test1");
-            }
+            // 释放锁
+            redisUtil.releaseLock("test");
         }
-        System.out.println("抢购成功！剩余库存为:" + realValue);
-        return "抢购成功！剩余库存为:" + realValue;
+        return "抢购成功，剩余库存" + realStock;
     }
+
 }
