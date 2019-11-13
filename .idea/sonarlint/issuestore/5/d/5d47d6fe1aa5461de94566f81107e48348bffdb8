@@ -1,0 +1,12 @@
+
+dsquid:S11920"FDefine a constant instead of duplicating this literal "test1" 3 times.(ױ¿½ֿ8ׁחרו-
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¹לj8ׁחרו-
+[
+squid:S1062"9Replace this use of System.out or System.err by a logger.(€דלÿÿÿÿÿ8ׁחרו-
+[
+squid:S1068"9Replace this use of System.out or System.err by a logger.(€דלÿÿÿÿÿ8ׁחרו-
+[
+squid:S106F"9Replace this use of System.out or System.err by a logger.(ֲ״הרÿÿÿÿ8ׁחרו-
+usquid:UselessImportCheck"ERemove this unused import 'com.onnoa.springboot.redis.utils.UserKey'.(©¡ע‎ÿÿÿÿÿ8ׁחרו-
+{squid:UselessImportCheck"QRemove this unused import 'com.onnoa.springboot.redis.lock.RedisDistributedLock'.(¯ûֽ8ׁחרו-
+Fsquid:S1148>"#Use a logger to log this exception.(€ֹװ…‎ÿÿÿÿ8ׁחרו-
