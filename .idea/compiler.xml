@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="chapter01-springboot-mybatis-plus" />
-        <module name="chapter05-springboot-security-jwt" />
-        <module name="chapter04-springboot-redis" />
-        <module name="spring-boot-security-oauth2-server" />
         <module name="chapter03-springboot-redission" />
+        <module name="chapter04-springboot-redis" />
+        <module name="chapter05-springboot-security-jwt" />
         <module name="spring-boot-security-oauth2-resource" />
+        <module name="spring-boot-security-oauth2-server" />
         <module name="springboot-commons" />
       </profile>
     </annotationProcessing>
@@ -31,12 +31,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="chapter01-springboot-mybatis-plus" options="-parameters" />
-      <module name="chapter03-springboot-redission" options="-parameters" />
-      <module name="chapter04-springboot-redis" options="-parameters" />
-      <module name="chapter05-springboot-security-jwt" options="-parameters" />
-      <module name="spring-boot-security-oauth2-resource" options="-parameters" />
-      <module name="spring-boot-security-oauth2-server" options="-parameters" />
+      <module name="chapter01-springboot-mybatis-plus" options="" />
+      <module name="chapter03-springboot-redission" options="" />
+      <module name="chapter04-springboot-redis" options="" />
+      <module name="chapter05-springboot-security-jwt" options="" />
+      <module name="spring-boot-security-oauth2-resource" options="" />
+      <module name="spring-boot-security-oauth2-server" options="" />
     </option>
   </component>
 </project>

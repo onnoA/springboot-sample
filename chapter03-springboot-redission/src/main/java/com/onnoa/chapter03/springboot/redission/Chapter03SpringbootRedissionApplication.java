@@ -28,12 +28,12 @@ public class Chapter03SpringbootRedissionApplication {
      * 集群
      * @return
      */
-    @Bean
+   /* @Bean
     public Redission redission(){
         Config config = new Config();
         config.useClusterServers()
 
-    }
+    }*/
 
 
 }
