@@ -42,9 +42,6 @@ public class TestController {
         try {
             boolean result = redisUtil.lock("test", 30000L, 1, 1000L);
             if (!result) {
-                System.out.println(redisUtil.get("test"));
-
-                log.info(String.format("获取锁失败,锁对象为:%s", redisUtil.get("test")));
                 return "抢购失败，请重试.....";
             }
             UserKey userKey = new UserKey(PrefixConstant.TBUSER);
