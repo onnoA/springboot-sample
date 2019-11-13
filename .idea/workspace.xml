@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d255ccc1-c1fd-49c0-bd35-e89eb68ffc6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/1567f0fa09d838b6c193f2aa67dd7489544c9f31" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d6384d533d3cc81a3b0162d085e4a570ca7ab3f4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/zookeeperlock/AbstractZookeeperLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/zookeeperlock/IZookeeperLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-commons/src/main/java/com/onnoa/springboot/commons/utils/zookeeperlock/ZookeeperDistributedLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-commons/springboot-commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-commons/springboot-commons.iml" afterDir="false" />
-    </list>
+    <list default="true" id="d255ccc1-c1fd-49c0-bd35-e89eb68ffc6e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -643,7 +626,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
