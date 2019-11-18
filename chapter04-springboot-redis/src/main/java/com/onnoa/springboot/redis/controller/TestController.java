@@ -8,6 +8,7 @@ import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.ApplicationContext;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,6 +27,9 @@ public class TestController {
 
     @Value("${server.port}")
     private String port;
+
+    @Autowired
+    private ApplicationContext context;
 
     @Autowired
     private RedisUtil redisUtil;

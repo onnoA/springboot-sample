@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.0.RELEASE</version>
+        <version>2.1.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -31,6 +31,7 @@
         <module>chapter04-springboot-redis</module>
         <module>springboot-samples-dependencies</module>
         <module>springboot-commons</module>
+        <module>chapter06-springboot-rocketmq-email</module>
     </modules>
 
     <dependencyManagement>
