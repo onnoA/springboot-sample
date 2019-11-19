@@ -32,6 +32,8 @@
         <module>springboot-samples-dependencies</module>
         <module>springboot-commons</module>
         <module>chapter06-springboot-rocketmq-email</module>
+        <module>chapter07-springcloud-alibaba</module>
+        <module>chapter08-dynamic-proxy</module>
     </modules>
 
     <dependencyManagement>
