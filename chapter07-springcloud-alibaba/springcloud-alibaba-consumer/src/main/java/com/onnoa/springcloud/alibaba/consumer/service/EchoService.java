@@ -9,4 +9,7 @@ public interface EchoService {
 
     @GetMapping(value = "/echo/{string}")
     public String echo(@PathVariable("string") String string);
+
+    @GetMapping(value = "/echo/port")
+    String port();
 }
