@@ -10,5 +10,10 @@
     <file url="file://$PROJECT_DIR$/chapter03-springboot-redission" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chapter04-springboot-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chapter05-springboot-security-jwt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter06-springboot-rocketmq-email" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter07-springcloud-alibaba" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter07-springcloud-alibaba/springcloud-alibaba-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter07-springcloud-alibaba/springcloud-alibaba-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter08-dynamic-proxy" charset="UTF-8" />
   </component>
 </project>
