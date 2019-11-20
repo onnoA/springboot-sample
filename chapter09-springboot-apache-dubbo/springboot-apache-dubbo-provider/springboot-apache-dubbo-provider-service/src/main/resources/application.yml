@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: dubbo-provider
+
+
+dubbo:
+  # 扫描dubbo service 注解，可以尝试注释掉试试
+  scan:
+    base-packages: com.onnoa.springboot.apache.dubbo.provider.service.impl
+  protocol:
+    name: dubbo
+    # -1 代表dubbo自动分配端口
+    port: -1
+  registry:
+    address: nacos://192.168.118.131:8848
