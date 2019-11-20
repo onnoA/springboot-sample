@@ -1,0 +1,7 @@
+
+~squid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "str".(ÃÍüÿÿÿÿ8Š¿ö–è-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(Å€ÕÁşÿÿÿÿ8åØğ–è-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(‰ÕÇÌùÿÿÿÿ8à“¼—è-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(Æî”8…Ø÷–è-

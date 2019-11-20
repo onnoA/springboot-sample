@@ -1,0 +1,57 @@
+
+Nsquid:S14448"0Make this "public static USER_AGENT" field final(ˆע‹מ8סרבז-
+osquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(ם׀ו תÿÿÿÿ8סרבז-
+jsquid:CallToDeprecatedMethod":Remove this use of "CoreProtocolPNames"; it is deprecated.(ׂם¡÷8·¨ךז-
+Isquid:S00108")Either remove or fill this block of code.(ן­£ִ8סרבז-
+|squid:S2293["YReplace the type specification in this constructor call with the diamond operator ("<>").(®›™²ûÿÿÿÿ8סרבז-
+squid:S3457ס"aNo need to call "toString()" method as formatting and string conversion is done by the Formatter.(ץך™W8סרבז-
+Gsquid:S1148ָ"#Use a logger to log this exception.(€ֹװ…‎ÿÿÿÿ8סרבז-
+‹"squid:ClassVariableVisibilityCheck8"VMake USER_AGENT a static final constant or non-public and provide accessors if needed.(ˆע‹מ8סרבז-
+:squid:S2326?"T is not used in the method.(׀³ל8סרבז-
+qsquid:S3776י"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ֳֵÛ¾8סרבז-
+Vsquid:S1135ס"2Complete the task associated to this TODO comment.(» זÿÿÿÿÿ8סרבז-
+Bsquid:S2629ס"$Invoke method(s) only conditionally.(ץך™W8סרבז-
+isquid:CallToDeprecatedMethod"4Remove this use of "ClientPNames"; it is deprecated.(‹ׂ¯־שÿÿÿÿ8·¨ךז-
+Isquid:S00108–")Either remove or fill this block of code.(ן­£ִ8סרבז-
+msquid:CallToDeprecatedMethodב"8Remove this use of "SSLSocketFactory"; it is deprecated.(Û‎²‎ÿÿÿÿ8·¨ךז-
+Gsquid:S1148ֽ"#Use a logger to log this exception.(€ֹװ…‎ÿÿÿÿ8סרבז-
+ˆ"squid:ClassVariableVisibilityCheck2"SMake content a static final constant or non-public and provide accessors if needed.(­ֱֵ’8סרבז-
+}squid:S2293ק"YReplace the type specification in this constructor call with the diamond operator ("<>").(₪‡¦ֽ‎ÿÿÿÿ8סרבז-
+Vsquid:S1135û"2Complete the task associated to this TODO comment.(» זÿÿÿÿÿ8סרבז-
+Hsquid:S00108y")Either remove or fill this block of code.(ן­£ִ8סרבז-
+Vsquid:S1135ק"2Complete the task associated to this TODO comment.(» זÿÿÿÿÿ8סרבז-
+Lsquid:S1604–"(Make this anonymous inner class a lambda(¾Úֹµ‎ÿÿÿÿ8·¨ךז-
+ksquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(›ס‹םשÿÿÿÿ8סרבז-
+Osquid:S4424מ"+Change this method so it throws exceptions.(¹„ֱ¦ÿÿÿÿÿ8£עגז-
+Isquid:S00108׃")Either remove or fill this block of code.(ן­£ִ8סרבז-
+osquid:CallToDeprecatedMethod‹":Remove this use of "CoreProtocolPNames"; it is deprecated.(ֽנב«ÿÿÿÿÿ8·¨ךז-
+nsquid:CallToDeprecatedMethod†"9Remove this use of "DefaultHttpClient"; it is deprecated.(׳סß₪רÿÿÿÿ8·¨ךז-
+msquid:CallToDeprecatedMethodא"8Remove this use of "SSLSocketFactory"; it is deprecated.(û¬‰שüÿÿÿÿ8·¨ךז-
+csquid:CallToDeprecatedMethodג".Remove this use of "Scheme"; it is deprecated.(המ¿רÿÿÿÿ8·¨ךז-
+Isquid:S00108ֽ")Either remove or fill this block of code.(ן­£ִ8סרבז-
+Ksquid:S4423Þ",Change this code to use a stronger protocol.(צ״¦8£עגז-
+Gsquid:S1148ו"#Use a logger to log this exception.(€ֹװ…‎ÿÿÿÿ8סרבז-
+isquid:CallToDeprecatedMethodÛ"9Remove this use of "DefaultHttpClient"; it is deprecated.(½¿ן8·¨ךז-
+msquid:CallToDeprecatedMethodא"8Remove this use of "SSLSocketFactory"; it is deprecated.(û¬‰שüÿÿÿÿ8·¨ךז-
+jsquid:S00112j"FDefine and throw a dedicated exception instead of using a generic one.(¢®Ý½שÿÿÿÿ8סרבז-
+}squid:S2293´"YReplace the type specification in this constructor call with the diamond operator ("<>").(®›™²ûÿÿÿÿ8סרבז-
+Gsquid:S1148‹"#Use a logger to log this exception.(€ֹװ…‎ÿÿÿÿ8סרבז-
+ssquid:S1192¦"TUse already-defined constant 'DefaultCharset' instead of duplicating its value here.(לÜ°8סרבז-
+csquid:CallToDeprecatedMethodג".Remove this use of "Scheme"; it is deprecated.(המ¿רÿÿÿÿ8·¨ךז-
+"squid:ClassVariableVisibilityCheck1"UMake stateCode a static final constant or non-public and provide accessors if needed.(¡§8סרבז-
+isquid:CallToDeprecatedMethod‡"9Remove this use of "DefaultHttpClient"; it is deprecated.(ׁ¦ֿ8·¨ךז-
+Jsquid:S4424פ"+Change this method so it throws exceptions.(”Ê•¡8£עגז-
+osquid:CallToDeprecatedMethod‰":Remove this use of "CoreProtocolPNames"; it is deprecated.(‏Üֶ“‏ÿÿÿÿ8·¨ךז-
+ssquid:S30088"URename this field "USER_AGENT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆע‹מ8סרבז-
+vsquid:S3776¥"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(‰״ױ€ÿÿÿÿÿ8סרבז-
+Nsquid:S2093²"*Change this "try" to a try-with-resources.(¡»¢üשÿÿÿÿ8סרבז-
+~squid:S001156"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ףײצûÿÿÿÿ8סרבז-
+Esquid:S1168ü"&Return an empty array instead of null.(¥¹ן8סרבז-
+`squid:S1126×"AReplace this if-then-else statement by a single return statement.(ַ–ץ”8סרבז-
+ƒsquid:S1149°"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ן„¡‏ÿÿÿÿ8סרבז-
+bsquid:S1155€">Use isEmpty() to check whether the collection is empty or not.(ױכü£‎ÿÿÿÿ8£עגז-
+hsquid:CallToDeprecatedMethod¨"8Remove this use of "ExecutionContext"; it is deprecated.(ׂנ•״8·¨ךז-
+Xsquid:S1118.":Add a private constructor to hide the implicit public one.(…־ּׂ8סרבז-
+isquid:CallToDeprecatedMethod"4Remove this use of "CookiePolicy"; it is deprecated.(‹ׂ¯־שÿÿÿÿ8·¨ךז-
+Fsquid:S1148t"#Use a logger to log this exception.(€ֹװ…‎ÿÿÿÿ8סרבז-
+isquid:CallToDeprecatedMethod‡"9Remove this use of "DefaultHttpClient"; it is deprecated.(ׁ¦ֿ8·¨ךז-
