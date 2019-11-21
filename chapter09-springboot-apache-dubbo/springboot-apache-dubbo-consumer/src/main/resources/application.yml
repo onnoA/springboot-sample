@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: dubbo-consumer
+
+dubbo:
+  # 可以注释掉试试
+  scan:
+    base-packages: com.onnoa.springboot.apache.dubbo.consumer.controller
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://192.168.118.131:8848
+server:
+  port: 8080
+endpoints:
+  dubbo:
+    enabled: true
+management:
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: threadpool
+  endpoints:
+    web:
+      exposure:
+        include: "*"
