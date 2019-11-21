@@ -12,6 +12,7 @@ public class HelloController {
     @Reference
     private HelloService helloService;
 
+
     @GetMapping(value = "/echo/{string}")
     public String echo(@PathVariable String string) {
         return helloService.sayHi(string);

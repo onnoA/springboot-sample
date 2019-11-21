@@ -48,7 +48,17 @@
             <groupId>com.alibaba.spring</groupId>
             <artifactId>spring-context-support</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-serialization-kryo</artifactId>
+        </dependency>
         <!-- Apache Dubbo End -->
+        <!--dubbo 外部化配置 Begin-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!--dubbo 外部化配置 End-->
         <!-- Projects Begin -->
         <dependency>
             <groupId>com.onnoa</groupId>
