@@ -34,6 +34,8 @@
         <module>chapter06-springboot-rocketmq-email</module>
         <module>chapter07-springcloud-alibaba</module>
         <module>chapter08-dynamic-proxy</module>
+        <module>chapter09-springboot-apache-dubbo</module>
+        <module>chapter10-springboot-captche</module>
     </modules>
 
     <dependencyManagement>
