@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <p> 状态码 : {{info.code}} </p>
+    <!--<p> 返回消息: {{info.msg}}</p>-->
+    <ul style="list-style-type: none">
+        <li>验证码:<img v-bind:src=info.data.jpg height="40px" width="72px"/></li>
+    </ul>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+        el: '#app',
+        data() {
+            return {
+                info: {
+                    code: 500,
+                    msg: "操作失败",
+                    data: [
+                        {jpg: null},
+                        {jpgKey: null}
+
+                    ]
+
+                }
+            }
+        },
+        mounted() {
+            axios
+                .get('http://localhost:8080/captche')
+                .then(response =>
+                    (this.info.code = response.data.code)
+                    //(this.info.msg = response.data.msg)
+                    (this.info.data.jpg = 'data:image/jpeg;base64,' + response.data.data.jpg)
+                );
+
+        }
+
+    });
+
+</script>
+</body>
+</html>

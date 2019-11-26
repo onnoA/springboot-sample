@@ -9,9 +9,7 @@
 </head>
 <body>
 <div id="app">
-    <h1 v-if="ok"> 第一个H1标签</h1>
-    <h1 v-else-if="jdk">第二个H1标签</h1>
-    <h1 v-else>第三个H1标签</h1>
+    <button v-on:click="doSomething">按钮</button>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -19,9 +17,15 @@
     var vm = new Vue({
         el: '#app',
         data: {
-            ok: true
+            message: "点击事件绑定"
+        },
+        methods: {
+            doSomething: function (e) {
+                alert("点我点我!" + this.message);
+            }
         }
     });
+
 </script>
 </body>
 </html>
