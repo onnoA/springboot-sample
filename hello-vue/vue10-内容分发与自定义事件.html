@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>内容分发与自定义事件</title>
+</head>
+<body>
+<div id="app">
+    <todo>
+        <todo-head slot="todo-head" head="今日待办事项"></todo-head>
+        <todo-list slot="todo-list" v-for="list in todoList" v-bind:list="list"></todo-list>
+    </todo>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type="text/javascript">
+    // 注册组件
+    Vue.component('todo', {
+        template: '<div>\
+                        <solt name="todo-head"></solt>\
+                            <ul>\
+                                <solt name="todo-list"></solt>\
+                            </ul>\
+                   </div>'
+    })
+
+    Vue.component('todo-head', {
+        props: ['head'],
+        template: '<h3>{{head}}</h3>'
+    })
+
+    Vue.component('todo-list', {
+        props: ['list'],
+        template: '<li>{{list}}</li>'
+    })
+
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            todoList: [
+                "第一个代办事项",
+                "第二个代办事项",
+                "第三个代办事项",
+                "第四个代办事项",
+                "第五个代办事项",
+            ]
+        }
+    })
+</script>
+</body>
+</html>

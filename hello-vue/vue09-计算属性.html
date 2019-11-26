@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>计算属性</title>
+</head>
+<body>
+<div id="app">
+    <p>调用当前时间的方法：{{currentTime1()}}</p>
+    <p>调用当前时间计算属性：{{currentTime2}} </p>
+    <p>{{message}}</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+       el: '#app',
+       data:{
+           message: '计算属性'
+       } ,
+        methods:{
+           currentTime1: function () {
+               return Date.now();
+           }
+        },
+        // 计算属性的主要特征是为了将不经常变化的数据进行缓存，减少系统开销
+        computed: {
+           currentTime2: function () {
+               this.message;
+               return Date.now();
+           }
+        }
+    });
+</script>
+</body>
+</html>

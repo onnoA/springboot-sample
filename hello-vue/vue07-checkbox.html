@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="app1">
+    单行文本: <input type="text" v-model="message1"/> 文本信息: {{message1}}
+</div>
+<div id="app2">
+    多行文本:<textarea v-model="message2"></textarea> 多行文本信息: {{message2}}
+</div>
+<div id="radioBox">
+    单选框:<input type="checkbox" v-model="checked"/> 是否选中: {{checked ? '是': '否'}}
+</div>
+<div id="checkBoxs">
+    多选框:
+    <input type="checkbox" id="Mike" value="Mike" v-model="checkName"><label for="Mike"></label>
+    <input type="checkbox" id="John" value="John" v-model="checkName"><label for="John"></label>
+    <input type="checkbox" id="Joe" value="Joe" v-model="checkName"><label for="Joe"></label>
+    <span>===>选中的值: {{ checkName }}</span>
+
+</div>
+
+<div id="radio">
+    单选框:
+    <input type="radio" id="firstRadio" value="第一个单选框" v-model="checkRadio"><label for="firstRadio">第一个单选框</label>
+    <input type="radio" id="secondRadio" value="第二个单选框" v-model="checkRadio"><label for="secondRadio">第二个单选框</label>
+    <span>===> 选中的值:{{checkRadio}}</span>
+</div>
+
+<div id="select">
+    <select v-model="selected">
+        <option disabled value="请选择地区">请选择地区</option>
+        <option value="广东">广东</option>
+        <option value="广西">广西</option>
+        <option value="江西">江西</option>
+    </select>
+    <span>===> 选中的地区: {{selected}}</span>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+        el: '#app1',
+        data: {
+            message1: "单行文本"
+        }
+
+    })
+    var v = new Vue({
+        el: '#app2',
+        data: {
+            message2: "多行文本"
+        }
+    })
+
+    var radioBox = new Vue({
+        el: '#radioBox',
+        data: {
+            checked: false
+        }
+    })
+
+    var checkbox = new Vue({
+        el: '#checkBoxs',
+        data: {
+            checkName: []
+        }
+    })
+
+    var radio = new Vue({
+        el: '#radio',
+        data: {
+            checkRadio: null
+        }
+    })
+
+    var select = new Vue({
+        el: '#select',
+        data: {
+            selected: ''
+        }
+    })
+</script>
+</body>
+</html>
