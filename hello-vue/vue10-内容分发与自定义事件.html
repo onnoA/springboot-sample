@@ -11,7 +11,8 @@
 <div id="app">
     <todo>
         <todo-head slot="todo-head" head="今日待办事项"></todo-head>
-        <todo-list slot="todo-list" v-for="list in todoList" v-bind:list="list"></todo-list>
+        <todo-list slot="todo-list" v-for="(list,index) in todoList" v-bind:list="list"
+                   v-bind:index="index" v-on:remove="removeList(index)"></todo-list>
     </todo>
 </div>
 
@@ -21,9 +22,9 @@
     // 注册组件
     Vue.component('todo', {
         template: '<div>\
-                        <solt name="todo-head"></solt>\
+                        <slot name="todo-head"></slot>\
                             <ul>\
-                                <solt name="todo-list"></solt>\
+                                <slot name="todo-list"></slot>\
                             </ul>\
                    </div>'
     })
@@ -34,8 +35,13 @@
     })
 
     Vue.component('todo-list', {
-        props: ['list'],
-        template: '<h5>{{list}}</h5>'
+        props: ['list', 'index'],
+        template: '<h5>{{list}}<button v-on:click="remove(index)">删除</button></h5>',
+        methods: {
+            remove: function (index) {
+                this.$emit('remove', index);
+            }
+        }
     })
 
     var vm = new Vue({
@@ -48,6 +54,11 @@
                 "第四个代办事项",
                 "第五个代办事项",
             ]
+        },
+        methods: {
+            removeList: function (index) {
+                this.todoList.splice(index, 1);
+            }
         }
     })
 </script>
