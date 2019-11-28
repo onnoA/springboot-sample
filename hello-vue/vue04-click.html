@@ -10,6 +10,7 @@
 <body>
 <div id="app">
     <button v-on:click="doSomething">按钮</button>
+    <h3 v-for="sub in data">{{sub.subject}}</h3>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -17,10 +18,18 @@
     var vm = new Vue({
         el: '#app',
         data: {
-            message: "点击事件绑定"
+            message: "点击事件绑定",
+            data:[
+                {subject:'科目一'},
+                {subject:'科目二'},
+                {subject:'科目三'},
+                {subject:'科目四'},
+            ]
         },
         methods: {
-            doSomething: function (e) {
+            doSomething: function () {
+                console.log(vm.message)
+                vm.data.forEach(sub=>console.log(sub))
                 alert("点我点我!" + this.message);
             }
         }
