@@ -28,8 +28,6 @@ public class TokenUtil {
     private DefaultKaptcha captchaProducer;
     @Autowired
     private RedisUtil redisUtil;
-    @Autowired
-    private UuidUtil uuidUtil;
 
 
     public ResultBean createVerificationCode() {
@@ -44,15 +42,15 @@ public class TokenUtil {
             //  定义response输出类型为image/jpeg类型
             response.setContentType("image/jpeg");*/
             String captchaText = captchaProducer.createText();
-            final String shortUUID = uuidUtil.getShortUUID();
+            String shortUUID = UuidUtil.getShortUUID();
             redisUtil.set(shortUUID, captchaText, 5 * 60L);
             //使用生产的验证码字符串返回一个BufferedImage对象并转为byte写入到byte数组中
             BufferedImage image = captchaProducer.createImage(captchaText);
             ImageIO.write(image, "jpg", byteOutPutStream);
             //将流转为byte数组
-            final byte[] bytes = byteOutPutStream.toByteArray();
+            byte[] bytes = byteOutPutStream.toByteArray();
             // 加密后传送给前端
-            final String jpgEncode = Base64.getEncoder().encodeToString(bytes);
+            String jpgEncode = Base64.getEncoder().encodeToString(bytes);
             HashMap<String, Object> map = new HashMap<>();
             map.put("jpg", jpgEncode);
             map.put("jpgKey", shortUUID);
