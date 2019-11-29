@@ -23,8 +23,8 @@ import javax.mail.internet.MimeMessage;
  */
 @Service
 public class EmailService {
-    @Autowired
-    private ConfigurableApplicationContext applicationContext;
+    /*@Autowired
+    private ConfigurableApplicationContext applicationContext;*/
 
     @Autowired
     private JavaMailSender javaMailSender;

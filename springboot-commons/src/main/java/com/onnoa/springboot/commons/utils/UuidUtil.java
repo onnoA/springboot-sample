@@ -9,7 +9,6 @@ import java.util.UUID;
  * @Author: onnoA
  * @Date: 2019/11/25 09:14
  */
-@Configuration
 public class UuidUtil {
 
     /**
@@ -17,7 +16,7 @@ public class UuidUtil {
      * @auther: onnoA
      * @date: 2019/11/25 10:13
      */
-    public String getUUID() {
+    public static String getUUID() {
         return UUID.randomUUID().toString().replace("-", "");
     }
 
@@ -26,7 +25,7 @@ public class UuidUtil {
      * @auther: onnoA
      * @date: 2019/11/25 10:13
      */
-    public String getShortUUID(){
+    public static String getShortUUID(){
         return NumbersUtil.uuid();
     }
 

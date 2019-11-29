@@ -10,7 +10,7 @@ import java.util.Date;
  * @Author: onnoA
  * @Date: 2019/11/28 17:18
  */
-@TableName("tb_user")
+//@TableName("tb_user")
 @Data
 public class TbUser implements Serializable {
 

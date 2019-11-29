@@ -1,4 +1,4 @@
-package com.onnoa.springboot.commons.utils;
+package com.onnoa.springboot.commons.utils.redislock;
 
 /**
  * 功能描述: 项目redis key前缀 统一管理

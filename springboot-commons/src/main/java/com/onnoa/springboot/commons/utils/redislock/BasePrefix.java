@@ -1,4 +1,4 @@
-package com.onnoa.springboot.commons.utils;
+package com.onnoa.springboot.commons.utils.redislock;
 
 public abstract class BasePrefix implements KeyPrefix {
 
