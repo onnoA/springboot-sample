@@ -1,4 +1,4 @@
 
-]squid:S1118":Add a private constructor to hide the implicit public one.(ÀßìÃøÿÿÿÿ8ƒÉ÷Ðä-
-Osquid:S1602%",Remove useless curly braces around statement(—ñµ…ýÿÿÿÿ8ƒÉ÷Ðä-
-}squid:S1149$"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8ƒÉ÷Ðä-
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(ÀßìÃøÿÿÿÿ
+Hsquid:S1602%",Remove useless curly braces around statement(—ñµ…ýÿÿÿÿ
+vsquid:S1149$"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰

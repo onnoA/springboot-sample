@@ -1,10 +1,11 @@
 
-Œsquid:S1319 "mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(Ö–ó§8Û§ æ-
-ƒsquid:UselessImportCheck"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ÜîŸæ-
-¬%squid:RedundantThrowsDeclarationCheckœ"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¯¶…œ8Û§ æ-
-Usquid:S2629Ú"7Use the built-in formatting to construct this argument.(ğËİM8Û§ æ-
-Usquid:S1068-"2Remove this unused "GET_EXPIRE_LUA" private field.(×‰êúÿÿÿÿ8Û§ æ-
-_squid:S3457Ú"AFormat specifiers should be used instead of string concatenation.(ğËİM8Û§ æ-
-csquid:S2583³"DChange this condition so that it does not always evaluate to "false"(Øš¾™8Û§ æ-
-qsquid:ModifiersOrderCheck&"EReorder the modifiers to comply with the Java Language Specification.(·ú«û8Û§ æ-
-esquid:S2142Ü"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Û§ æ-
+¥%squid:RedundantThrowsDeclarationCheck¥"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¯¶…œ
+Nsquid:S2629ã"7Use the built-in formatting to construct this argument.(ğËİM
+jsquid:ModifiersOrderCheck+"EReorder the modifiers to comply with the Java Language Specification.(·ú«û
+|squid:S3008)"`Rename this field "DefaultTimeoutSenonds" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õåœûÿÿÿÿ
+Usquid:S1068)"9Remove this unused "DefaultTimeoutSenonds" private field.(Õåœûÿÿÿÿ
+Nsquid:S10682"2Remove this unused "GET_EXPIRE_LUA" private field.(×‰êúÿÿÿÿ
+…squid:S1319¥"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(Ö–ó§
+\squid:S2583¸"DChange this condition so that it does not always evaluate to "false"(Øš¾™
+^squid:S2142å"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+Xsquid:S3457ã"AFormat specifiers should be used instead of string concatenation.(ğËİM

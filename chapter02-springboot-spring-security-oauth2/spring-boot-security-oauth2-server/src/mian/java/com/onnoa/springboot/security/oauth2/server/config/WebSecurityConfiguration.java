@@ -25,6 +25,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true, jsr250Enabled = true)
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
+   /* @Autowired
+    private UserDetailsServiceImpl userDetailsService;*/
+
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         // 设置加密方式

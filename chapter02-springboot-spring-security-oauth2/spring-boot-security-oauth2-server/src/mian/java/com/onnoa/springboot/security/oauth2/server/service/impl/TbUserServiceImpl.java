@@ -22,10 +22,10 @@ public class TbUserServiceImpl extends ServiceImpl<TbUserMapper, TbUser> impleme
     private TbUserMapper tbUserMapper;
 
     @Override
-    public TbUser getByUsername(String username) {
+    public List<TbUser> getByUsername(String username) {
         QueryWrapper<TbUser> qw = new QueryWrapper<>();
         qw.eq("username",username);
-        TbUser tbUser = tbUserMapper.selectOne(qw);
-        return tbUser;
+        List<TbUser> tbUserList = tbUserMapper.selectList(qw);
+        return tbUserList;
     }
 }

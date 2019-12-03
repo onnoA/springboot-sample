@@ -1,6 +1,5 @@
 package com.onnoa.springboot.commons.utils;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.onnoa.springboot.commons.jwt.JWTConstant;
 import com.onnoa.springboot.commons.jwt.JWtObj;
 import io.jsonwebtoken.Claims;
@@ -18,7 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Description: JWT util
+ * @Description: JWT 工具类
  * @Author: onnoA
  * @Date: 2019/11/29 10:19
  */
@@ -112,6 +111,13 @@ public class JWTUtil {
         return claims;
     }
 
+    /**
+     * 功能描述:
+     * @param jwt 加密后的jwt
+     * @param secret 密钥secret
+     * @return jwt 自定义对象
+     * @date 2019/11/30 12:12
+     */
     public static JWtObj tranJWTObj(String jwt, String secret) throws Exception {
         Jws<Claims> claimsJws = parseJWT(jwt, secret);
         String subject = claimsJws.getBody().getSubject();
@@ -121,7 +127,7 @@ public class JWTUtil {
 
     /**
      * 由字符串生成加密key
-     *
+     * 根据密钥secret生成签名
      * @return 加密key
      */
     public static SecretKey generateKey(String secret) {

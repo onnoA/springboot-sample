@@ -14,11 +14,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletConfig;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * @Description:
@@ -37,16 +44,37 @@ public class AdminController {
 
     @GetMapping(value = "/captche")
     public ResultBean captche() {
+        RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
+        ServletRequestAttributes sra = (ServletRequestAttributes) requestAttributes;
+        HttpServletRequest request = sra.getRequest();
+
+        // 获取请求方式:GET
+        System.out.println("获取请求方式:" + request.getMethod());
+        // uri:/captche 获取项目的相对路径。
+        System.out.println("uri:" + request.getRequestURI());
+        // url:http://localhost:8080/captche 完整的请求路径
+        System.out.println("url:" + request.getRequestURL());
+        Enumeration<String> headerNames = request.getHeaderNames();
+        while (headerNames.hasMoreElements()) {
+            System.out.println("headerName:" + headerNames.nextElement());
+            String s = headerNames.nextElement();
+            if (Objects.nonNull(s)) {
+
+                System.out.println("header:" + request.getHeader(s));
+            }
+
+        }
+
         return tokenUtil.createVerificationCode();
     }
 
     @GetMapping(value = "/getVerifyCode2")
-    public ResultBean getVerifyCode2(){
+    public ResultBean getVerifyCode2() {
         Object[] obj = VerifyCodeUtil2.createImage(true);
         String uuid = UuidUtil.getUUID();
-        redisUtil.set(uuid,obj[0],5*60L);
+        redisUtil.set(uuid, obj[0], 5 * 60L);
         Map<String, String> map = new HashMap<>();
-        map.put("jpgKey",uuid);
+        map.put("jpgKey", uuid);
         map.put("jpg", (String) obj[1]);
         return ResultBean.buildResultBeanVO(ResultCode.SUCCESS, map);
     }
@@ -57,8 +85,8 @@ public class AdminController {
             // 获取验证码
             Map<String, String> codeMap = VerifyCodeUtil.getVerifyCode();
             String uuid = UuidUtil.getUUID();
-            redisUtil.set(uuid,codeMap.get("code"),5*60L);
-            codeMap.put("jpgKey",uuid);
+            redisUtil.set(uuid, codeMap.get("code"), 5 * 60L);
+            codeMap.put("jpgKey", uuid);
             codeMap.remove("code");
             return ResultBean.buildResultBeanVO(ResultCode.SUCCESS, codeMap);
         } catch (Exception e) {

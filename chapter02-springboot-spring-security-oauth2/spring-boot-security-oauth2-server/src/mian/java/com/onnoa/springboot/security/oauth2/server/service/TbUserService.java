@@ -3,6 +3,8 @@ package com.onnoa.springboot.security.oauth2.server.service;
 import com.onnoa.springboot.security.oauth2.server.domain.TbUser;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * @Description:
  * @Author:     onnoA
@@ -16,7 +18,7 @@ public interface TbUserService extends IService<TbUser>{
      * @auther: onnoA
      * @date: 2019/11/1 10:24
      */
-    TbUser getByUsername(String username);
+    List<TbUser> getByUsername(String username);
 
 
 }

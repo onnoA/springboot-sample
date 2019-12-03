@@ -1,18 +1,0 @@
-
-[
-squid:S106X"9Replace this use of System.out or System.err by a logger.(Š•éùÿÿÿÿ8Í‰Úå-
-\squid:S3752B">Add a "method" parameter to this "@RequestMapping" annotation.(Ñ×à×8Í‰Úå-
-Msquid:S5411$"*Use the primitive boolean expression here.(‡šÑ©ûÿÿÿÿ8ÇÔâÛå-
-ksquid:S4488 "HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÓÚ¨Ãøÿÿÿÿ8ÿãŸÚå-
-U
-squid:S106-"9Replace this use of System.out or System.err by a logger.(ÊØå-8¿“²Úå-
-~squid:UselessImportCheck"NRemove this unused import 'com.sun.org.apache.xpath.internal.operations.Bool'.(™¦èûÿÿÿÿ8ÇÔâÛå-
-ksquid:S44888"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(€¤Şßùÿÿÿÿ8°¼ àá-
-\squid:S3752L">Add a "method" parameter to this "@RequestMapping" annotation.(Üñ„å8Í‰Úå-
-[
-squid:S106+"9Replace this use of System.out or System.err by a logger.(š£³üÿÿÿÿ8ª¢±Úå-
-V
-squid:S106["9Replace this use of System.out or System.err by a logger.(“ åº8Í‰Úå-
-Fsquid:S1148h"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Í‰Úå-
-isquid:CommentedOutCodeLineT"<This block of commented-out lines of code should be removed.(¡Ë¿˜8Í‰Úå-
-Xsquid:S1191"5Use classes from the Java API instead of Sun classes.(™¦èûÿÿÿÿ8ÇÔâÛå-

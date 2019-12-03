@@ -1,5 +1,4 @@
 
-«%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(–Ùë¡8º¾ƒ“æ-
 Msquid:S2696"6Make the enclosing method "static" or remove this set.(°è”
+¤%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(–Ùë¡
 hsquid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(ôãç•øÿÿÿÿ
-ysquid:CallToDeprecatedMethod"ERemove this use of "PropertyPlaceholderConfigurer"; it is deprecated.(ª´öíøÿÿÿÿ8º¾ƒ“æ-

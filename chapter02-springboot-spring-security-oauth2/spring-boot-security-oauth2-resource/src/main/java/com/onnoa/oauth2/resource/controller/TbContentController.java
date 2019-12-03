@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -28,7 +29,8 @@ public class TbContentController {
      * @date: 2019/11/3 21:47
      */
     @GetMapping("/")
-    public ResponseResult<List<TbContent>> selectAll(){
+    public ResponseResult<List<TbContent>> selectAll(HttpServletRequest request){
+        System.out.println(request.getRequestURI());
         List<TbContent> tbContentList = tbContentService.selectAll();
         return new ResponseResult<List<TbContent>>(HttpStatus.OK.value(), HttpStatus.OK.toString(), tbContentList);
     }

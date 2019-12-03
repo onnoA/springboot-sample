@@ -1,7 +1,7 @@
 package com.onnoa.springboot.commons.jwt;
 
 /**
- * @Description:
+ * @Description: jwt 自定义对象
  * @Author: onnoA
  * @Date: 2019/11/29 10:58
  */

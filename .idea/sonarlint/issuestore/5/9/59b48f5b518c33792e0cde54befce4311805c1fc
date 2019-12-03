@@ -1,24 +1,25 @@
 
-jsquid:S1192¡"KDefine a constant instead of duplicating this literal "yyyy-MM-dd" 3 times.(¸ƒ€À8ä æËå-
-psquid:S00117A"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹»„á8â´øËå-
-Tsquid:S2209Í"5Change this instance-reference to a static reference.(ÀÛñ—8ä æËå-
-Gsquid:S1148¿"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ä æËå-
-jsquid:CommentedOutCodeLine¾"<This block of commented-out lines of code should be removed.(†€éˆ8ä æËå-
-[squid:S2589Ç"7Remove this expression which always evaluates to "true"(ëŞÌßúÿÿÿÿ8ÇüøËå-
-Bsquid:S2129Í"Remove this "Long" constructor(Ò…»‡úÿÿÿÿ8ä æËå-
-Vsquid:S1854C"8Remove this useless assignment to local variable "date".(éŸ«ú8â´øËå-
-Xsquid:S1118":Add a private constructor to hide the implicit public one.(Ÿÿ¸Ü8á™ãËå-
-squid:S1158Í"zCall the static method Long.compare(...) instead of instantiating a temporary object to perform this to string conversion.(Ò…»‡úÿÿÿÿ8ä æËå-
-Tsquid:S2209×"5Change this instance-reference to a static reference.(Öá®§8ä æËå-
-Fsquid:S1148u"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8½úäËå-
-Fsquid:S1148X"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8³ÂöËå-
-Tsquid:S2209Ş"5Change this instance-reference to a static reference.(Öá®§8ä æËå-
-\
-squid:S106ô"9Replace this use of System.out or System.err by a logger.(ÙÇú±øÿÿÿÿ8ä æËå-
-[squid:S2589Ê"7Remove this expression which always evaluates to "true"(®Œ¼Êıÿÿÿÿ8ÇüøËå-
-Msquid:S2110Í"."12" is not a valid value for setting "MONTH".(şõØÌ8ä æËå-
-Tsquid:S2209Æ"5Change this instance-reference to a static reference.(ÀÛñ—8ä æËå-
-Gsquid:S1481C")Remove this unused "date" local variable.(éŸ«ú8â´øËå-
-\
-squid:S106æ"9Replace this use of System.out or System.err by a logger.(ÙÇú±øÿÿÿÿ8ä æËå-
-esquid:S1126®"AReplace this if-then-else statement by a single return statement.(òÀµÿşÿÿÿÿ8ä æËå-
+csquid:S1192¡"KDefine a constant instead of duplicating this literal "yyyy-MM-dd" 3 times.(¸ƒ€À
+csquid:CommentedOutCodeLine¾"<This block of commented-out lines of code should be removed.(†€éˆ
+U
+squid:S106æ"9Replace this use of System.out or System.err by a logger.(ÙÇú±øÿÿÿÿ
+U
+squid:S106ô"9Replace this use of System.out or System.err by a logger.(ÙÇú±øÿÿÿÿ
+^squid:S1126®"AReplace this if-then-else statement by a single return statement.(òÀµÿşÿÿÿÿ
+Fsquid:S2110Í"."12" is not a valid value for setting "MONTH".(şõØÌ
+Tsquid:S2589Ç"7Remove this expression which always evaluates to "true"(ëŞÌßúÿÿÿÿ
+Tsquid:S2589Ê"7Remove this expression which always evaluates to "true"(®Œ¼Êıÿÿÿÿ
+@squid:S1481C")Remove this unused "date" local variable.(éŸ«ú
+Zsquid:CallToDeprecatedMethodÍ",Remove this use of "Long"; it is deprecated.(Ò…»‡úÿÿÿÿ
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(Ÿÿ¸Ü
+Msquid:S2209Æ"5Change this instance-reference to a static reference.(ÀÛñ—
+Msquid:S2209Í"5Change this instance-reference to a static reference.(ÀÛñ—
+Msquid:S2209×"5Change this instance-reference to a static reference.(Öá®§
+Msquid:S2209Ş"5Change this instance-reference to a static reference.(Öá®§
+Osquid:S1854C"8Remove this useless assignment to local variable "date".(éŸ«ú
+isquid:S00117A"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹»„á
+?squid:S1148X"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S1148u"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148¿"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+—squid:S1158Í"zCall the static method Long.compare(...) instead of instantiating a temporary object to perform this to string conversion.(Ò…»‡úÿÿÿÿ
+;squid:S2129Í"Remove this "Long" constructor(Ò…»‡úÿÿÿÿ

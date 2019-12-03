@@ -37,6 +37,9 @@ public class RedisUtil implements ApplicationContextAware {
 
     private RedisTemplate<String, String> redisTemplate;
 
+    // 默认超时时间
+    private static int DefaultTimeoutSenonds = 1 * 24 * 60 * 60; // 1 天
+
     private final static String INCREMENTERROR = "递增因子必须大于0";
 
     private ThreadLocal<String> lockFlag = new ThreadLocal<>();

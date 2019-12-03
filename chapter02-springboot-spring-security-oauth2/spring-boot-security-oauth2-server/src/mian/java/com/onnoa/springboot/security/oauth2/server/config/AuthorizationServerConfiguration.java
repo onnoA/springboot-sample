@@ -34,9 +34,6 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
-    /*@Autowired
-    private RedisConnectionFactory redisConnectionFactory;*/
-
     @Bean
     @Primary
     @ConfigurationProperties(prefix = "spring.datasource")
@@ -88,4 +85,6 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
         // 设置令牌
         endpoints.tokenStore(tokenStore());
     }
+
+
 }

@@ -14,6 +14,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import java.util.Collection;
 import java.util.List;
@@ -36,23 +37,29 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        TbUser tbUser = tbUserService.getByUsername(username);
-        if (Objects.isNull(tbUser)) {
+        List<TbUser> tbUserList = tbUserService.getByUsername(username);
+        if (CollectionUtils.isEmpty(tbUserList)) {
             throw new RuntimeException("用户不存在");
+        }
+        if(tbUserList.size()>1){
+            throw new RuntimeException("用户名重复");
         }
 
         List<GrantedAuthority> grantedAuthorityList = Lists.newArrayList();
-        // 获取用户权限
-        List<TbPermission> tbPermissionList = tbPermissionService.getByUserId(tbUser.getId());
-        // 用户授权
-        tbPermissionList.forEach(tbPermission -> {
-            if (tbPermission != null && StringUtils.isNotBlank(tbPermission.getEnname())) {
-                GrantedAuthority grantedAuthority = new SimpleGrantedAuthority(tbPermission.getEnname());
-                grantedAuthorityList.add(grantedAuthority);
-            }
-        });
+        // 根据用户id获取用户权限
+        List<TbPermission> tbPermissionList = tbPermissionService.getByUserId(tbUserList.get(0).getId());
+        if(!CollectionUtils.isEmpty(tbPermissionList)){
+            // 用户授权
+            tbPermissionList.forEach(tbPermission -> {
+                if (tbPermission != null && StringUtils.isNotBlank(tbPermission.getEnname())) {
+                    GrantedAuthority grantedAuthority = new SimpleGrantedAuthority(tbPermission.getEnname());
+                    grantedAuthorityList.add(grantedAuthority);
+                }
+            });
+        }
 
-        return new User(tbUser.getUsername(), tbUser.getPassword(), grantedAuthorityList);
+
+        return new User(tbUserList.get(0).getUsername(), tbUserList.get(0).getPassword(), grantedAuthorityList);
 
     }
 }

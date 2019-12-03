@@ -13,7 +13,7 @@ public enum ExceptionEnums {
     RPC_EXPETION(99997, "RPC调用失败【%s】"),
     DATABASE_PERSIS_ERROR(99992, "数据持久化出现错误"),
 
-    // 通用异常
+    // *************** 通用异常 **************
 
     // 参数校验异常
     INPUT_PARAMS_ERROR(99992, "参数校验失败,请重新输入"),
@@ -26,19 +26,21 @@ public enum ExceptionEnums {
     //特定业务异常
     /*用户服务【user】
         以798开头，
-        其他服务以79n往后面排，
+        其他服务以798*往后面排，
         各自维护对应服务的异常类型
     */
     USER_GET_USERID_TOKEN(79899, "获取登录人uid失败：用户未登录：token=【%s】"),
     USER_GET_USERID_PARENTTOKEN(79898, "获取登录人uid失败：父令牌无效：parentToken=【%s】"),
-    USER_GET_USERID_EXPIRETIME(79896, "获取登录人uid失败：令牌过期：expireTime=【%s】"),
-    USER_GET_USERID_RENEWTIME(79895, "获取登录人uid失败：令牌需要续期：renewTime=【%s】"),
-    USER_UNAUTHORIZED(99996, "未授权"),
-    USER_UN_LOGIN(99995, "未登陆"),
-    USER_INFO_EXCEPTION(99994, "用户信息获取异常"),
-    USER_GET_USER_EXCEPTION(79899, "获取登录人信息异常：用户未登录请重新登录");
+    USER_GET_USERID_EXPIRETIME(79897, "获取登录人uid失败：令牌过期：expireTime=【%s】"),
+    USER_GET_USERID_RENEWTIME(79898, "获取登录人uid失败：令牌需要续期：renewTime=【%s】"),
+    USER_UNAUTHORIZED(79895, "未授权"),
+    USER_UN_LOGIN(79894, "未登陆"),
+    USER_INFO_EXCEPTION(79893, "用户信息获取异常"),
+    USER_GET_USER_EXCEPTION(79892, "获取登录人信息异常：用户未登录请重新登录");
 
     // 其他业务异常
+
+
 
     ExceptionEnums(int code, String msg) {
         this.code = code;

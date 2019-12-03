@@ -1,9 +1,0 @@
-
-³%squid:RedundantThrowsDeclarationCheckD"vRemove the declaration of thrown exception 'org.springframework.dao.DataAccessException' which is a runtime exception.(ˆÑúÿÿÿÿ8Š®æ-
-³%squid:RedundantThrowsDeclarationCheck_"vRemove the declaration of thrown exception 'org.springframework.dao.DataAccessException' which is a runtime exception.(ßùÂúÿÿÿÿ8Š®æ-
-Zsquid:S26296"7Use the built-in formatting to construct this argument.(šÀòüÿÿÿÿ8Š®æ-
-|squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ò–²óøÿÿÿÿ8Š®æ-
-|squid:S2293V"YReplace the type specification in this constructor call with the diamond operator ("<>").(É†Çµúÿÿÿÿ8Š®æ-
-|squid:S2293X"YReplace the type specification in this constructor call with the diamond operator ("<>").(äşÚœùÿÿÿÿ8Š®æ-
-dsquid:S21428"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Š®æ-
-dsquid:S34576"AFormat specifiers should be used instead of string concatenation.(šÀòüÿÿÿÿ8Š®æ-

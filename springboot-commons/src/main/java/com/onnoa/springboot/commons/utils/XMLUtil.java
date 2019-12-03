@@ -136,12 +136,10 @@ public class XMLUtil {
     }
 
     /**
-     * 解析xml,返回第一级元素键值对。如果第一级元素有子节点，则此节点的值是子节点的xml数据。
-     *
+     * 功能描述: 解析xml,返回第一级元素键值对。如果第一级元素有子节点，则此节点的值是子节点的xml数据。
      * @param strxmlParam
      * @return
-     * @throws JDOMException
-     * @throws IOException
+     * @date 2019/11/30 12:26
      */
     @SuppressWarnings("rawtypes")
     public static Map<String, String> xml2map(String strxmlParam) throws JDOMException, IOException {
@@ -184,10 +182,10 @@ public class XMLUtil {
     }
 
     /**
-     * 获取子结点的xml
-     *
-     * @param children
-     * @return String
+     * 功能描述: 获取子结点的xml
+     * @param children 自己点list集合
+     * @return 子节点文本
+     * @date 2019/11/30 12:25
      */
     @SuppressWarnings("rawtypes")
     private static String getChildrenText(List children) {
@@ -213,10 +211,10 @@ public class XMLUtil {
 
 
     /**
-     * 解析xml,返回第一级元素键值对。如果第一级元素有子节点，则此节点的值是子节点的xml数据。
-     *
-     * @author 陈章伟
-     * @time 2018年8月29日上午10:35:07
+     * 功能描述: 解析xml,返回第一级元素键值对。如果第一级元素有子节点，则此节点的值是子节点的xml数据。
+     * @param strxmlParam xml 文本
+     * @return  map集合
+     * @date 2019/11/30 12:25
      */
     @SuppressWarnings("rawtypes")
     public static Map<String, Object> xmlAll2map(String strxmlParam) throws JDOMException, IOException {

@@ -1,7 +1,7 @@
 package com.onnoa.springboot.commons.exception;
 
 /**
- * @Description: 业务异常的统一封装
+ * @Description: 封装统一的业务异常
  * @Author: onnoA
  * @Date: 2019/11/28 14:23
  */

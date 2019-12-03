@@ -1,5 +1,5 @@
 
-wsquid:S1488'"YImmediately return this expression instead of assigning it to the temporary variable "t".(¶±Ù8ÿ¿¯›æ-
-Fsquid:S1148^"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÿ¿¯›æ-
-isquid:S1192\"FDefine a constant instead of duplicating this literal "UTF-8" 3 times.(¸¿¼úÿÿÿÿ8´¸²›æ-
-Xsquid:S1118!":Add a private constructor to hide the implicit public one.(î”—Å8éÕ÷šæ-
+Qsquid:S1118!":Add a private constructor to hide the implicit public one.(î”—Å
+psquid:S1488'"YImmediately return this expression instead of assigning it to the temporary variable "t".(¶±Ù
+?squid:S1148^"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+bsquid:S1192\"FDefine a constant instead of duplicating this literal "UTF-8" 3 times.(¸¿¼úÿÿÿÿ

@@ -1,4 +1,4 @@
 
-Ë%squid:RedundantThrowsDeclarationCheck%"’Remove the declaration of thrown exception 'org.springframework.security.core.userdetails.UsernameNotFoundException' which is a runtime exception.(žÌÃŸ8†ˆÏ¦â-
-jsquid:S00112)"FDefine and throw a dedicated exception instead of using a generic one.(“°£ýùÿÿÿÿ8Ò‚æ¦â-
-asquid:UselessImportCheck"1Remove this unused import 'java.util.Collection'.(¹ÉÐšùÿÿÿÿ8ð¼Ö¦â-
+jsquid:S00112)"FDefine and throw a dedicated exception instead of using a generic one.(“°£ýùÿÿÿÿ8‡ÔðÎì-
+Ë%squid:RedundantThrowsDeclarationCheck%"’Remove the declaration of thrown exception 'org.springframework.security.core.userdetails.UsernameNotFoundException' which is a runtime exception.(žÌÃŸ8‡ÔðÎì-
+asquid:UselessImportCheck"1Remove this unused import 'java.util.Collection'.(¹ÉÐšùÿÿÿÿ8‡ÔðÎì-
