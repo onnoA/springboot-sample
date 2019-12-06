@@ -2,6 +2,6 @@
 asquid:S4488A"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Μγ
 \squid:UselessImportCheck"3Remove this unused import 'javax.validation.Valid'.(ζ¤ρχϊÿÿÿÿ
 rsquid:UselessImportCheck"IRemove this unused import 'org.springframework.validation.BindingResult'.(‹¶Έωÿÿÿÿ
+fsquid:S4488."JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Γθοϋÿÿÿÿ
 psquid:UselessImportCheck"GRemove this unused import 'org.springframework.validation.ObjectError'.(ύ£Ώ®ÿÿÿÿÿ
 gsquid:CallToDeprecatedMethod""3Remove this use of "description"; it is deprecated.(Έ•Ϊόÿÿÿÿ8ΤώΘ¥μ-
-fsquid:S4488."JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Γθοϋÿÿÿÿ
