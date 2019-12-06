@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @Description: pringSecurity需要的用户详情
+ * @Description: SpringSecurity需要的用户详情
  * @Author: onnoA
  * @Date: 2019/11/4 15:11
  */
