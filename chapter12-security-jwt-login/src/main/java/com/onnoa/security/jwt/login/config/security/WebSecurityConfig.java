@@ -107,7 +107,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 )
                 .permitAll()
                 // 对登录注册允许无权限访问
-                .antMatchers("/admin/login", "/admin/register","/admin/test")
+                .antMatchers("/admin/login", "/admin/register","/admin/test","/admin/captche","/admin/push")
                 .permitAll()
                 // 除上面的请求外，所有的请求均需验证
                 .anyRequest()

@@ -1,8 +1,10 @@
 package com.onnoa.security.jwt.login;
 
+import com.onnoa.utils.utils.RedisUtil;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 /**
  * @Description:
@@ -15,5 +17,17 @@ public class SecurityJWTLoginApplication {
     public static void main(String[] args) {
         SpringApplication.run(SecurityJWTLoginApplication.class,args);
 
+
     }
+
+    @Bean
+    public RedisUtil redisUtil(){
+        return new RedisUtil();
+    }
+
+    /*@Bean
+    public PropertiesUtil propertiesUtil(){
+        return new PropertiesUtil();
+    }*/
+
 }

@@ -77,3 +77,13 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 server:
   port: 8088
+test: 测试
+
+wx:
+  mp:
+    appId: wx806160036f03bb3f
+    secret: a1940d53fc22fecbccdd23a29137d804
+  cp:
+    corpId: ww931c285c323d2f42
+    agentId: 1000004
+    corpSecret: bAM1STaBxWriiRy3Nq1psrx62ZBdxSOdSPNtrO2cbz0

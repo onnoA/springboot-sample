@@ -5,16 +5,22 @@ import com.google.common.collect.Maps;
 import com.onnoa.security.jwt.login.domain.UmsPermission;
 import com.onnoa.security.jwt.login.service.UmsAdminService;
 import com.onnoa.security.jwt.login.service.UmsPermissionService;
-import com.onnoa.security.jwt.login.service.impl.UmsAdminServiceImpl;
+import com.onnoa.security.jwt.login.utils.WeChatReminderUtil;
 import com.onnoa.utils.exception.BusinessException;
 import com.onnoa.utils.exception.ExceptionEnums;
 import com.onnoa.utils.jwt.JwtTokenUtils;
 import com.onnoa.utils.response.ResultBean;
 import com.onnoa.utils.response.ResultCode;
+import com.onnoa.utils.utils.PropertiesUtil;
+import com.onnoa.utils.utils.RedisUtil;
+import com.onnoa.utils.utils.UuidUtil;
+import com.onnoa.utils.utils.VerifyCodeUtil2;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -39,9 +45,40 @@ public class UmsAdminController {
     private static final Logger LOGGER = LoggerFactory.getLogger(UmsAdminController.class);
 
     @Autowired
+    private RedisUtil redisUtil;
+
+    @Autowired
     private UmsAdminService adminService;
     @Autowired
     private UmsPermissionService permissionService;
+    @Autowired
+    private Environment environment;
+    @Autowired
+    private WeChatReminderUtil weChatReminderUtil;
+
+
+    @PostMapping(value = "/push")
+    public ResultBean weChatPushMsg() {
+        try {
+            weChatReminderUtil.sendCpTextMessage("企业微信消息推送测试");
+        } catch (Exception e) {
+            return ResultBean.buildResultBeanVO(ResultCode.FAIL, "微信推送失败!");
+        }
+        return ResultBean.buildResultBeanVO(ResultCode.SUCCESS, "微信推送成功!");
+
+    }
+
+
+    @PostMapping(value = "captche")
+    public ResultBean captche() {
+        Object[] obj = VerifyCodeUtil2.createImage(true);
+        String uuid = UuidUtil.getUUID();
+        redisUtil.set(uuid, obj[0], 5 * 600L);
+        Map<String, String> map = new HashMap<>();
+        map.put("jpgKey", uuid);
+        map.put("jpg", (String) obj[1]);
+        return ResultBean.buildResultBeanVO(ResultCode.SUCCESS, map);
+    }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     //@PreAuthorize("hasAuthority('pms:brand:read') or hasRole('品牌管理员')")
@@ -52,8 +89,15 @@ public class UmsAdminController {
             if (StringUtils.isBlank(idStr)) {
                 throw new BusinessException(String.format(ExceptionEnums.PARAMETERS_EXCEPTION.getMessage(), "参数不能为空"));
             }
-            Long id = Long.valueOf(idStr);
-            LOGGER.info("id为:{}", id);
+            String jpg = (String) map.get("jpg");
+            String jpgKey = (String) map.get("jpgKey");
+            if (!redisUtil.hasKey(jpgKey)) {
+                throw new BusinessException(ExceptionEnums.USER_VERIFICATION_CODE_HAVE_EXPIRED);
+            }
+            String redisJpg = (String) redisUtil.get(jpgKey);
+            if (!StringUtils.equalsIgnoreCase(redisJpg, jpg)) {
+                throw new BusinessException(ExceptionEnums.USER_VERIFICATION_CODE_ERROR);
+            }
             String username = (String) map.get("username");
             String password = (String) map.get("password");
             String token = adminService.login(username, password);
@@ -63,7 +107,7 @@ public class UmsAdminController {
             tokenMap.put("tokenHead", JwtTokenUtils.TOKENHEAD);
             return ResultBean.buildResultBeanVO(ResultCode.SUCCESS, tokenMap);
         } catch (Exception e) {
-            return ResultBean.buildResultBeanVO(ResultCode.FAIL, null);
+            return ResultBean.buildResultBeanVO(ResultCode.FAIL, e.getMessage());
         }
     }
 

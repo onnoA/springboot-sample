@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+    <!-- 企业微信配置CP  -->
+    <bean id="cpDefaultConfig" class="me.chanjar.weixin.cp.config.impl.WxCpDefaultConfigImpl">
+        <property name="corpId" value="${wx.cp.corpId}" />
+        <property name="agentId" value="${wx.cp.agentId}" />
+        <property name="corpSecret" value="${wx.cp.corpSecret}" />
+    </bean>
+    <bean id="WxCpServiceImpl" class="me.chanjar.weixin.cp.api.impl.WxCpServiceImpl">
+        <property name="wxCpConfigStorage" ref="cpDefaultConfig" />
+    </bean>
+    <!--微信公众号配置MP -->
+    <bean id="wxMpDefaultConfigImpl" class="me.chanjar.weixin.mp.config.impl.WxMpDefaultConfigImpl">
+        <property name="appId" value="${wx.mp.appId}" />
+        <property name="secret" value="${wx.mp.secret}" />
+    </bean>
+    <bean id="WxMpServiceHttpClientImpl" class="me.chanjar.weixin.mp.api.impl.WxMpServiceHttpClientImpl">
+        <property name="wxMpConfigStorage" ref="wxMpDefaultConfigImpl" />
+    </bean>
+
+</beans>
