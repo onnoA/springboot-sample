@@ -3,6 +3,8 @@ package com.onnoa.security.jwt.login.service;
 import com.onnoa.security.jwt.login.domain.UmsAdmin;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * @Description:
  * @Author: onnoA
@@ -26,4 +28,6 @@ public interface UmsAdminService extends IService<UmsAdmin> {
      * @date 2019/12/5 10:00
      */
     UmsAdmin getAdminByUsername(String username);
+
+    List<UmsAdmin> getByUsername(String admin);
 }

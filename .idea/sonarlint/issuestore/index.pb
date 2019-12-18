@@ -227,8 +227,6 @@ bchapter12-security-jwt-login/src/main/java/com/onnoa/security/jwt/login/enums/W
 dchapter12-security-jwt-login/src/main/java/com/onnoa/security/jwt/login/config/XMLConfiguration.java,1\e\1ecd9c9e461d4c05fa2a7c5b593fc7b46a9f8673
 “
 cchapter12-security-jwt-login/src/main/java/com/onnoa/security/jwt/login/domain/UmsWeChatConfig.java,f\c\fc0e889365dc59b389a67745fff1352181e07f14
-’
-bchapter12-security-jwt-login/src/main/java/com/onnoa/security/jwt/login/utils/WeChatPushUtils.java,b\2\b2357a49ed819f7d8f186d4652945c837a1a3f9f
 •
 echapter12-security-jwt-login/src/main/java/com/onnoa/security/jwt/login/utils/WeChatReminderUtil.java,7\4\7449f2bb380c3ee9b2200aa68e3ec4588b0763cf
 ™

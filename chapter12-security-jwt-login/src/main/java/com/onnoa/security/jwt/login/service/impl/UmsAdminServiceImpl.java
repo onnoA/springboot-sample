@@ -76,4 +76,9 @@ public class UmsAdminServiceImpl extends ServiceImpl<UmsAdminMapper, UmsAdmin> i
         }
         return umsAdminList.get(0);
     }
+
+    @Override
+    public List<UmsAdmin> getByUsername(String admin) {
+        return adminMapper.getByUsername(admin);
+    }
 }

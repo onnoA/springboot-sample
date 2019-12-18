@@ -1,5 +1,6 @@
 package com.onnoa.dynamic.proxy.jdk;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -23,12 +24,20 @@ public class JDKDynamicProxy implements InvocationHandler {
         return (IJDKDynamicProxy) Proxy.newProxyInstance(proxyTarget.getClass().getClassLoader(),proxyTarget.getClass().getInterfaces(),this);
     }
 
+    /**
+     * @param proxyObj 指代理类
+     * @param method 被代理的方法
+     * @param args 该方法的参数数组
+     * @return
+     * @date 2019/12/18 14:55
+     */
     @Override
     public Object invoke(Object proxyObj, Method method, Object[] args) throws Throwable {
         // 执行切面增强
         if ("proxyMethod".equals(method.getName())) {
             System.out.println("执行切面前置增强===========> " + method.getName());
             Object result = method.invoke(proxyTarget, args);
+
             System.out.println("执行切面后置增强===========> " + method.getName());
             return result;
         }
@@ -41,5 +50,6 @@ public class JDKDynamicProxy implements InvocationHandler {
         JDKDynamicProxy jdkDynamicProxy = new JDKDynamicProxy(proxyTarget);
         IJDKDynamicProxy proxy = jdkDynamicProxy.createProxy();
         proxy.proxyMethod("小马",18);
+        System.out.println(proxy.otherMethod());
     }
 }

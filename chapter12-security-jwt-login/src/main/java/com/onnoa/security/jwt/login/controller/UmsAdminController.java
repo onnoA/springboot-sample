@@ -2,6 +2,7 @@ package com.onnoa.security.jwt.login.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Maps;
+import com.onnoa.security.jwt.login.domain.UmsAdmin;
 import com.onnoa.security.jwt.login.domain.UmsPermission;
 import com.onnoa.security.jwt.login.service.UmsAdminService;
 import com.onnoa.security.jwt.login.service.UmsPermissionService;
@@ -56,6 +57,12 @@ public class UmsAdminController {
     @Autowired
     private WeChatReminderUtil weChatReminderUtil;
 
+    @PostMapping(value = "mybatis")
+    public ResultBean mybatis() {
+        List<UmsAdmin> list = adminService.getByUsername("admin");
+        return ResultBean.buildResultBeanVO(ResultCode.SUCCESS, list);
+    }
+
 
     @PostMapping(value = "/push")
     public ResultBean weChatPushMsg() {
@@ -71,9 +78,9 @@ public class UmsAdminController {
 
     @PostMapping(value = "captche")
     public ResultBean captche() {
-        System.out.println("test"+PropertiesUtil.getProperty("test"));
-        System.out.println("配置"+PropertiesUtil.getProperty("appId"));
-        System.out.println("mybatis"+PropertiesUtil.getProperty("mapper-locations"));
+        System.out.println("test" + PropertiesUtil.getProperty("test"));
+        System.out.println("配置" + PropertiesUtil.getProperty("appId"));
+        System.out.println("mybatis" + PropertiesUtil.getProperty("mapper-locations"));
         Object[] obj = VerifyCodeUtil2.createImage(true);
         String uuid = UuidUtil.getUUID();
         redisUtil.set(uuid, obj[0], 5 * 600L);

@@ -17,6 +17,6 @@ public class ProxyTarget implements IJDKDynamicProxy {
 
     @Override
     public String otherMethod() {
-        return null;
+        return "OtherMethod";
     }
 }

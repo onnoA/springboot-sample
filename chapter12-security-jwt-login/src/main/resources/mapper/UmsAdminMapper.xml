@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.onnoa.security.jwt.login.mapper.UmsAdminMapper">
+    <!-- type:映射实体类的数据类型 id：resultMap的唯一标识 -->
     <resultMap id="BaseResultMap" type="com.onnoa.security.jwt.login.domain.UmsAdmin">
         <!--@Table ums_admin-->
+        <!-- column:库表的字段名 property:实体类里的属性名 -->
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="username" jdbcType="VARCHAR" property="username"/>
         <result column="password" jdbcType="VARCHAR" property="password"/>
@@ -14,10 +16,17 @@
         <result column="login_time" jdbcType="TIMESTAMP" property="loginTime"/>
         <result column="status" jdbcType="INTEGER" property="status"/>
     </resultMap>
+
     <sql id="Base_Column_List">
-    id, username, `password`, icon, email, nick_name, note, create_time, login_time,
-    `status`
-  </sql>
+        id, username, `password`, icon, email, nick_name, note, create_time, login_time,`status`
+    </sql>
+
+    <select id="getByUsername" parameterType="java.lang.String"
+            resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from ums_admin where username=#{username}
+    </select>
 
 
 </mapper>
