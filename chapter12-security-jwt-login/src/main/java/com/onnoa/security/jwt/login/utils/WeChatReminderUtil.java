@@ -1,10 +1,10 @@
 package com.onnoa.security.jwt.login.utils;
 
 import com.onnoa.security.jwt.login.mapper.UmsWeChatConfigMapper;
+import com.onnoa.utils.utils.WeChatPushUtils;
 import me.chanjar.weixin.common.error.WxErrorException;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

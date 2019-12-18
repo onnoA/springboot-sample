@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.onnoa.security.jwt.login.mapper.UmsPermissionMapper">
+    <resultMap id="BaseResultMap" type="com.onnoa.security.jwt.login.domain.UmsPermission">
+        <!--@Table ums_permission-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="pid" jdbcType="BIGINT" property="pid"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="value" jdbcType="VARCHAR" property="value"/>
+        <result column="icon" jdbcType="VARCHAR" property="icon"/>
+        <result column="type" jdbcType="INTEGER" property="type"/>
+        <result column="uri" jdbcType="VARCHAR" property="uri"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="sort" jdbcType="INTEGER" property="sort"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, pid, `name`, `value`, icon, `type`, uri, `status`, create_time, sort
+  </sql>
+
+    <select id="getPermissionByAdminId" resultMap="BaseResultMap">
+      SELECT
+          up.*
+      FROM
+          ums_admin ua
+          LEFT JOIN ums_admin_role_relation uarr ON ua.id = uarr.admin_id
+          LEFT JOIN ums_role ur ON ur.id = uarr.role_id
+          LEFT JOIN ums_role_permission_relation urpr on urpr.role_id = ur.id
+          LEFT JOIN ums_permission up on up.id = urpr.permission_id
+      WHERE
+          ua.id = #{adminId} and up.id is not null
+  </select>
+
+
+</mapper>

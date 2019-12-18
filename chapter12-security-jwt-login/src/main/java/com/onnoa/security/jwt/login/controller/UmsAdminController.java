@@ -71,6 +71,9 @@ public class UmsAdminController {
 
     @PostMapping(value = "captche")
     public ResultBean captche() {
+        System.out.println("test"+PropertiesUtil.getProperty("test"));
+        System.out.println("配置"+PropertiesUtil.getProperty("appId"));
+        System.out.println("mybatis"+PropertiesUtil.getProperty("mapper-locations"));
         Object[] obj = VerifyCodeUtil2.createImage(true);
         String uuid = UuidUtil.getUUID();
         redisUtil.set(uuid, obj[0], 5 * 600L);

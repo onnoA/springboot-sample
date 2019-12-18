@@ -1,6 +1,7 @@
 package com.onnoa.security.jwt.login;
 
 import com.onnoa.utils.utils.RedisUtil;
+import com.onnoa.utils.utils.WeChatPushUtils;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -25,9 +26,10 @@ public class SecurityJWTLoginApplication {
         return new RedisUtil();
     }
 
-    /*@Bean
-    public PropertiesUtil propertiesUtil(){
-        return new PropertiesUtil();
-    }*/
+    @Bean
+    public WeChatPushUtils weChatPushUtils(){
+        return new WeChatPushUtils();
+    }
+
 
 }
